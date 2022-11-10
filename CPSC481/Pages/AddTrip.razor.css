@@ -1,22 +1,48 @@
-﻿.previous {
-    color: black;
-    font-size: 25px;
-    font-weight: bold;
+﻿.page-container {
+    width: 100%;
 }
 
-.groove {
-    border-style: groove;
+.page-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5rem 0;
 }
 
-.border {
-    border-style: groove;
+.page-title {
+    margin: 0 0 0 0.5rem;
 }
 
-/*.form-group {
-    border-style: groove;
-}*/
+.page-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 0.5em;
+    height: auto;
+}
 
-.form-box {
-    border-style: solid;
+.create-option{
+    margin: 0;
+}
+
+.trip-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1em;
+    height: auto;
+    border: solid;
+    border-radius: 0.35rem;
+}
+
+.btn-save {
+    background-color: #4CAF50;
+    margin: 0.5rem 0 0 0;
+    color: white;
+}
+
+.btn-round {
+    border-radius: 5rem;
     padding: 0.5rem;
 }

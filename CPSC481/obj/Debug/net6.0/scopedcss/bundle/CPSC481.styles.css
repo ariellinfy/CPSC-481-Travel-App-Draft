@@ -77,26 +77,52 @@
     padding: 0.5rem;
 }
 /* _content/CPSC481/Pages/AddTrip.razor.rz.scp.css */
-.previous[b-z72x14d4zp] {
-    color: black;
-    font-size: 25px;
-    font-weight: bold;
+.page-container[b-z72x14d4zp] {
+    width: 100%;
 }
 
-.groove[b-z72x14d4zp] {
-    border-style: groove;
+.page-header[b-z72x14d4zp] {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5rem 0;
 }
 
-.border[b-z72x14d4zp] {
-    border-style: groove;
+.page-title[b-z72x14d4zp] {
+    margin: 0 0 0 0.5rem;
 }
 
-/*.form-group {
-    border-style: groove;
-}*/
+.page-body[b-z72x14d4zp] {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 0.5em;
+    height: auto;
+}
 
-.form-box[b-z72x14d4zp] {
-    border-style: solid;
+.create-option[b-z72x14d4zp]{
+    margin: 0;
+}
+
+.trip-form[b-z72x14d4zp] {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1em;
+    height: auto;
+    border: solid;
+    border-radius: 0.35rem;
+}
+
+.btn-save[b-z72x14d4zp] {
+    background-color: #4CAF50;
+    margin: 0.5rem 0 0 0;
+    color: white;
+}
+
+.btn-round[b-z72x14d4zp] {
+    border-radius: 5rem;
     padding: 0.5rem;
 }
 /* _content/CPSC481/Pages/AmenitySearchPage.razor.rz.scp.css */
@@ -263,7 +289,6 @@ h5[b-dgd59kxs8t] {
 *[b-7zfj4j95sg] {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
 }
 
 .page[b-7zfj4j95sg] {
@@ -356,6 +381,7 @@ article[b-7zfj4j95sg] {
 
 .navbar[b-sl09fl9cl6] {
     width: 100%;
+    border-top: 0.1rem solid grey;
 }
 
 .navbar-nav[b-sl09fl9cl6] {
