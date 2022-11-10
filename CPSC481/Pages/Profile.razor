@@ -1,0 +1,109 @@
+@page "/profilepage"
+
+<!-- <PageTitle> Profile Page </PageTitle> -->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> Profile </title>
+    <link rel="stylesheet" href="../bootstrap-5.2.0-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./Fa_icons/css/all.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row mb-2">
+        <div class="col">
+            
+        </div>
+        <div class="col">
+            <h1><b><i><u> Profile</u></i></b></h1>
+        </div>
+        <div class="col">
+            <div class="col-sm" style="border:0px solid #000000; display:flex; justify-content:right">
+                <button type="button" name="editsettings" content="S" class="btn btn-success btn-floating" style="width:40px; height:30px" @onclick="Settings_fn"> 
+                <i class="fa fa-gear"><NavLink class="nav-link text-light" href="settingspage">
+                </NavLink></i> 
+                </button>
+
+                <button type="button" name="editsettings" content="E" class="btn btn-success btn-floating" style="width:40px; height:30px" @onclick="Edit_fn"> 
+                <i class="fa fa-edit"><NavLink class="nav-link text-light" href="editpage">
+                </NavLink></i>
+                </button>
+            </div>
+        </div>
+        <br>
+    </div>
+    <hr>
+    <div class="row">  
+        <div class="col">
+        </div>     
+        <div class="col mt-2 bg-light">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColour" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+            </svg>
+        </div>
+        <div class="col mt-2">
+        </div>
+        <br>
+        <div classs="col-sm mt-2">
+            <h5 style="text-align:center; font-size:24px"> Adam Smith </h5>
+        </div>
+        <div class="col-sm mt-2 mb-2">
+            <h5 style="text-align:center; font-size:22px"> Calgary, AB </h5>
+        </div>
+        <br>
+        <hr>
+        <div class="col-sm mt-3">
+            <p style="text-align:center"><NavLink href="bookmarkspage">My Bookmarks</NavLink></p> 
+        </div> 
+        <div class="col-sm mt-3">
+        <p style="text-align:center"><NavLink href="reviewspage">My Reviews</NavLink></p>   
+        </div>
+        <div class="col-sm mt-3 mb-3">
+        <p style="text-align:center"><NavLink href="notificationspage">My Notifications</NavLink></p> 
+        </div>
+        <br>
+        <hr>
+    </div>
+    <div class="row">
+        <div class="col">
+            
+        </div>
+        <div class="col mt-3">
+            <button class="btn btn-success" @onclick="Logout_fn">
+                <NavLink class="nav-link text-light" href="loginpage">
+                Logout
+                </NavLink>
+            </button>
+            <br>
+        </div> 
+        <div class="col">
+            
+        </div>    
+    </div>
+ 
+    <br>
+    <hr> 
+</div>
+</body>
+</html>
+
+
+@code{
+    private int a = 0;
+    private int b = 0;
+    private int c = 0;
+
+    private void Settings_fn()
+    {
+        a++;
+    }
+    private void Edit_fn()
+    {
+        b++;
+    }
+    private void Logout_fn()
+    {
+        c++;
+    }
+
+}
