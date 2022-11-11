@@ -20,17 +20,17 @@
 .search-event-button {
     background-color: white;
     color: green;
-    border-color: green;
-    padding: 8px;
+    padding: 3px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 10px;
+    margin: 2px 2px;
     border-radius: 50%;
+    border: none;
 }
 
-.btn-container {
+.btn-temp-container {
     display: flex;
     position: absolute;
     right: 0;
@@ -47,3 +47,61 @@
 
 body {
 }
+
+
+
+
+
+
+body {
+    margin: 0;
+}
+
+#searchButton {
+    margin: 0;
+}
+
+#title {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.amenityList {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.amenityListImg {
+    height: 60px;
+    width: 100px;
+    padding: 2px;
+}
+
+.description > p {
+    font-size: x-small;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.description {
+    width: 220px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.btn-container {
+    width: 50px;
+}
+
+
