@@ -91,3 +91,7 @@ C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\AddPlan.
 C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\AddTrip.razor.rz.scp.css
 C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\TripMainPage.razor.rz.scp.css
 C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Components\TripCard.razor.rz.scp.css
+C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\EventPage.razor.rz.scp.css
+C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\Events.razor.rz.scp.css
+C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\EventsFilter.razor.rz.scp.css
+C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\EventsSearch.razor.rz.scp.css

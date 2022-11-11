@@ -13,10 +13,9 @@
     </div>
 
     <div class="page-body">
-        
         <form class="trip-form">
             <h5 class="create-option">Create an Empty Trip</h5>
-            <div class="form-floating mb-3">
+            <div class="form-floating mt-3 mb-3">
                 <input type="text" class="form-control" id="tripName" placeholder="unknown" required>
                 <label for="tripName">Trip Name</label>
             </div>
@@ -24,10 +23,9 @@
             <button type="submit" class="btn btn-save">Create</button>
         </form>
 
-        
         <form class="trip-form">
             <h5 class="create-option">Create a Suggested Trip</h5>
-            <div class="form-floating mb-3">
+            <div class="form-floating mt-3 mb-3">
                 <input type="date" class="form-control" id="startDate" required>
                 <label for="startDate&Time">Start Date</label>
             </div>
@@ -35,6 +33,36 @@
             <div class="form-floating mb-3">
                 <input type="date" class="form-control" id="endDate" required>
                 <label for="endDate">End Date</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <select class="form-select" aria-label="trip types">
+                    <option selected></option>
+                    <option value="outdoor">Outdoor</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="monuments">Monuments</option>
+                    <option value="nature">Nature</option>
+                    <option value="art">Art</option>
+                    <option value="culture">Culture</option>
+                    <option value="park">Park</option>
+                    <option value="games">Games</option>
+                    <option value="sports">Sports</option>
+                    <option value="museums">Museums</option>
+                </select>
+                <label>Desired Types of Trip</label>
+            </div>
+
+            <div class="selected-types">
+                <span class="badge rounded-pill selected-type">Outdoor</span>
+                <span class="badge rounded-pill selected-type">Shopping</span>
+                <span class="badge rounded-pill selected-type">Monuments</span>
+                <span class="badge rounded-pill selected-type">Nature</span>
+                <span class="badge rounded-pill selected-type">Art</span>
+                <span class="badge rounded-pill selected-type">Culture</span>
+                <span class="badge rounded-pill selected-type">Park</span>
+                <span class="badge rounded-pill selected-type">Games</span>
+                <span class="badge rounded-pill selected-type">Sports</span>
+                <span class="badge rounded-pill selected-type">Museums</span>
             </div>
 
             <button type="submit" class="btn btn-save">Create</button>

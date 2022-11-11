@@ -17,13 +17,17 @@
 .page-body {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    margin: 0 0.5em;
+    gap: 2.5rem;
+    margin: 2rem 0.5em;
     height: auto;
 }
 
-.create-option{
-    margin: 0;
+.create-option {
+    margin: -2rem 0 0 0;
+    background-color: white;
+    width: fit-content;
+    padding: 0 0.5rem;
+    color: darkolivegreen;
 }
 
 .trip-form {
@@ -33,11 +37,12 @@
     padding: 1rem 1em;
     height: auto;
     border: solid;
+    border-color: darkolivegreen;
     border-radius: 0.35rem;
 }
 
 .btn-save {
-    background-color: #4CAF50;
+    background-color: forestgreen;
     margin: 0.5rem 0 0 0;
     color: white;
 }
@@ -45,4 +50,11 @@
 .btn-round {
     border-radius: 5rem;
     padding: 0.5rem;
+}
+
+.selected-type {
+    font-size: 0.85em;
+    padding: 0.5em 0.85em;
+    margin: 0.25em 0;
+    background-color:lightcoral;
 }

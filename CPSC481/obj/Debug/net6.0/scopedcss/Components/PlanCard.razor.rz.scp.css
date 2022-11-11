@@ -14,4 +14,15 @@
     margin: 1rem;
     border-radius: 5rem;
     padding: 0;
+    font-size: 1.35rem;
+    color: darkgray;
+}
+
+.btn-notify:focus[b-ozac5kjzqk] {
+    box-shadow: none;
+}
+
+.btn-notify:focus-within[b-ozac5kjzqk] {
+    color: #eec23dcc;
+    outline: none;
 }

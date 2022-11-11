@@ -19,7 +19,7 @@
 }
 
 .page-title[b-bbl5kbr5ma] {
-    margin: 0 0 0 0.5rem;
+    margin: 0 0 0 1rem;
 }
 
 .btn-fixed[b-bbl5kbr5ma] {
@@ -31,4 +31,9 @@
 .btn-round[b-bbl5kbr5ma] {
     border-radius: 5rem;
     padding: 0.5rem;
+}
+
+.btn-add[b-bbl5kbr5ma] {
+    background-color: forestgreen;
+    color: white;
 }
