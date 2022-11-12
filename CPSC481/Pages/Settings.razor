@@ -13,10 +13,11 @@
 <div class="container">
     <div class="row mb-2">
         <div class="col">
-            <button class="btn btn-success" style="width:40%; height:30%"> <i class="fa fa-angle-left"><NavLink class="nav-link text-light" href="profilepage">
-                
-                </NavLink></i></button>
-        </div>
+            <NavLink class="nav-link text-light" href="profilepage">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                </svg>
+            </NavLink>
         <div class="col" style="border:1px solid #FFFFFF; display:flex; justify-content:center">
             <h1><b><i><u> Settings </u></i></b></h1>
         </div>
@@ -29,23 +30,43 @@
         <div class="col-sm">
             <h3><i>Data</i></h3>
         </div>
-        <h6 style="text-align:center"> Offline Itinerary  <i>("[on]"--"[off]")</i> </h6>
+        <h5 style="text-align:center"> Offline Itinerary  <svg xmlns="http://www.w3.org/2000/svg" fill="green" height="30%" width="30%" viewBox="0 0 20 20"><path d="M13 3H7a7 7 0 1 0 0 14h6a7 7 0 1 0 0-14zm0 12a5 5 0 1 1 .001-10.001A5 5 0 0 1 13 15z"/>
+                </svg> </h5>
     </div>
-    <hr>
+
     <div class="row">
         <div class="col-sm">
             <h3><i>Account</i></h3>
         </div>
-        <div class="col">
+        <br>
+        
+        <div class="col-sm-12">
+            <div class="offset-4">
+                <button class="btn btn-outline-success">
+                    Delete Account
+                </button>
+            </div>
         </div>
-        <div class="col">
-            <button class="btn btn-outline-success">
-                Delete Account
-            </button>
+    </div>
+    <div class="row mt-5 mb-3">
+        <div class="col-sm">
+            <h3><i>Notifications Time </i></h3>
+            <p><i> Get notifications before your plan's timings start :] </i></p>
         </div>
-        <div class="col"></div>
+        <div class="col-sm-8">
+            <div class="offset-1 form-group">
+                <select class="form-control" style="text-align:center; color:green; border:1px solid green " id="exampleFormControlSelect1">
+                    <option>30 min (default)</option>
+                    <option>15 min</option>
+                    <option>45 min</option>
+                    <option>60 min</option>
+                </select>
+            </div>
+        </div>
+        
     </div>
     <hr>
+</div>
 </div>
 </body>
 </html>
