@@ -1,0 +1,59 @@
+﻿body {
+    margin: 0;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 10rem;
+    border-radius: 3%;
+}
+
+.tags > span{
+    color: black;
+    background-color: lightgreen;
+}
+
+.tags {
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    font-size: x-small;
+    gap: 3rem;
+    text-align: center;
+}
+
+#bookmark {
+    width: 4rem;
+}
+
+#itinerary {
+    width: 4rem;
+}
+
+#similar-amenities {
+    display: flex;
+    overflow: scroll;
+    gap: 1rem;
+    margin-bottom: 50px;
+}
+
+#similar-amenities::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: xx-small;
+}
+
+.title{
+    display: flex;
+}
+
+h5 {
+    font-size: smaller;
+}

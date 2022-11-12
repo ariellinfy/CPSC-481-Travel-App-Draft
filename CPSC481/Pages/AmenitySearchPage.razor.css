@@ -11,36 +11,6 @@
     gap: 0.7rem;
 }
 
-.amenityList {
-    display: flex;
-    border-bottom: solid 0.1rem black;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.amenityListImg {
-    height: 60px;
-    width: 100px;
-    padding: 2px;
-}
-
-.description > p {
-    font-size: x-small;
-    margin-bottom: 0;
-    margin-top: 5px;
-}
-
-.description > h6 {
-    font-weight: bold;
-    margin-bottom: 0;
-    margin-top: 5px;
-    font-size: smaller;
-}
-
-.description {
-    width: 220px;
-}
-
 img {
     width: 100%;
     height: 100%;
@@ -48,3 +18,26 @@ img {
     border-radius: 10px;
 }
 
+.card-img-top {
+    height: 5rem;
+    width: 4rem;
+    border-radius: 20%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: row;
+    font-size: smaller;
+    border: 1px solid rgba(0,0,0,.4);
+    border-radius: 0.25rem;
+    gap: 5%;
+}
+
+.card-description {
+    width: 14rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
