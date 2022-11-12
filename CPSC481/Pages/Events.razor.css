@@ -20,10 +20,13 @@ body {
 
 .card-img-top {
     border-radius: 5%;
+    width: 218px;
+    height: 146px;
 }
 
 .card2 {
-    min-width: 200px;
+    min-width: 10rem;
+    margin-right: 1.5rem;
 }
 
 .card-img-top2 {
@@ -33,7 +36,9 @@ body {
 }
 
 .card-text2 {
-    align-content: center;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
 }
 
 #popular::-webkit-scrollbar {
