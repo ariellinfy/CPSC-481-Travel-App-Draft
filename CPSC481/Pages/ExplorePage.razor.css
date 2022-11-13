@@ -5,12 +5,12 @@
 #popular {
     display: flex;
     overflow: scroll;
-    gap: 1rem;
+    gap: 2rem;
     margin-bottom: 50px;
+    height: 18rem;
 }
 
 .card {
-    min-width: 220px;
     border-radius: 10%;
     border-color: rgba(111,111,111,0.2) transparent transparent;
 }
@@ -36,7 +36,8 @@ a {
 }
 
 .card2 {
-    min-width: 200px;
+    min-width: 160px;
+    text-align: center;
 }
 
 .card-img-top2 {
@@ -51,6 +52,8 @@ a {
 
 .card-img-top {
     border-radius: 5%;
+    height: 10rem;
+    width: 14rem;
     
 }
 
