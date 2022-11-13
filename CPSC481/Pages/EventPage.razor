@@ -3,197 +3,163 @@
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="page-header">
-    <button type="button" class="btn btn-round" style="padding: 0;padding-right: 20px; font-weight:700;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-        </svg>
-    </button>
-    <div class="event-title-head" style=""><h3 style="font-family:Georgia ;font-weight: 500;">3-Round Settlers Tournament</h3></div>
-</div>
+<div class="page-container">
+    <div class="page-header">
+        <div class="event-title-head" style=""><h3>3-Round Settlers Tournament</h3></div>
+        <button id="btn-previous" type="button" class="btn"><i class="bi bi-x-lg"></i></button>
+    </div>
 
-<img class="images-event" src="https://secure-content.meetupstatic.com/images/classic-events/449771821/333x188.webp" alt="DogShow" style="width:100%;">
+    <img class="images-event" src="https://secure-content.meetupstatic.com/images/classic-events/449771821/333x188.webp" alt="DogShow" style="width:100%;">
 
-<div class="tag-container">
-    <button class="tag-btn">games</button>
-    <button class="tag-btn">indoor</button>
-    <button class="tag-btn">group-games</button>
-    <button class="tag-btn">prizes</button>
-    <button class="tag-btn">animal</button>
-    <button class="tag-btn">Accessibility</button>
-    <button class="tag-btn">Kid-friendly</button>
-    <button class="tag-btn">Free-food</button>
-</div>
+    <div class="tag-container">
+        <button class="tag-btn">games</button>
+        <button class="tag-btn">indoor</button>
+        <button class="tag-btn">group-games</button>
+        <button class="tag-btn">prizes</button>
+        <button class="tag-btn">animal</button>
+        <button class="tag-btn">Accessibility</button>
+        <button class="tag-btn">Kid-friendly</button>
+        <button class="tag-btn">Free-food</button>
+    </div>
 
-<div>
-    <br />
-    <h6>
-        This will be a 3-round Settlers tournament for fame, glory and prizes. $10 registration at the door. All proceeds will go towards prizes.
-        <br />
-        There will be 3 rounds. All players are guaranteed to play 2 games for a chance to play at a Round 3 Final Table.
-    </h6>
-    <h6><span style ="font-weight: 700;">Address: </span>1000 9 Avenue SW, CA, AB</h6>
-    <h6><span style="font-weight: 700;">Time: </span>12:45PM - 5:00PM MST</h6>
-    <h6><span style="font-weight: 700;">Date: </span>Sunday, November 13 2022</h6>
-</div>
-
-<div class="btn-container">
-    <a href="AddTrip" class="btn-fixed btn btn-round btn-add" type="button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#4E7779" class="bi bi-bookmark" viewBox="0 0 16 16">
-            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-        </svg>
-    </a>
-    <a  class="btn-fixed btn btn-round btn-add" type="button" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#4E7779" class="bi bi-plus-circle" viewBox="0 0 16 16">
-            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-        </svg>
-    </a>
-
-</div>
-
-
-
-<!-- 2 Modal -->
-<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalToggleLabel" style="color: #4E7779;">Add to Trip</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="d-grid gap-2 col-6 mx-auto">
-                    <button style="background-color: white; border: none; color: #4E7779;" class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Existing Trip</button>
-                </div><br />
-                 <div class="d-grid gap-2 col-6 mx-auto">
-                    <button style="background-color: white; border: none; color: #4E7779;" class="btn btn-primary" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Create a New Trip</button>
-                 </div>
-            </div>
+    <div class="event-info">
+        <p>
+            This will be a 3-round Settlers tournament for fame, glory and prizes. $10 registration at the door. All proceeds will go towards prizes.
             <br />
-        </div>
+            There will be 3 rounds. All players are guaranteed to play 2 games for a chance to play at a Round 3 Final Table.
+        </p>
+        <h6><span style="font-weight: 700;">Address: </span>1000 9 Avenue SW, CA, AB</h6>
+        <h6><span style="font-weight: 700;">Time: </span>12:45 PM - 5:00 PM MST</h6>
+        <h6><span style="font-weight: 700;">Date: </span>Sunday, November 13 2022</h6>
     </div>
-</div>
-<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2" style="color: #4E7779;">Existing Trip</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form action="/DefaultAddPlan">
-                    <div class="d-grid gap-2 col-9 mx-auto">
-                        <button style="background-color: white; border: none; color: #4E7779;" class="btn btn-primary" data-bs-toggle="modal">Canadian Rockies Trip</button>
-                    </div>
-                </form>
-                <br />
-                <div class="d-grid gap-2 col-9 mx-auto">
-                    <button style="background-color: white; border: none; color: #4E7779;" class="btn btn-primary" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal">Winter Shopping</button>
-                </div>
-                <form action="/DefaultAddPlan">
-                    <div class="d-grid gap-2 col-9 mx-auto">
-                        <button style="background-color: white; border: none; color: #4E7779;" class="btn btn-primary" data-bs-toggle="modal">Canadian Rockies Trip</button>
-                    </div>
-                </form>
-                <br />
-            </div>
-        </div>
+
+    <div class="btn-container">
+        <a class="btn btn-bookmark" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#7E6D53" class="bi bi-bookmark" viewBox="0 0 16 16">
+                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+            </svg>
+        </a>
+        <a class="btn btn-add" type="button" data-bs-toggle="modal" href="#addToTripModalToggle" role="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#7E6D53" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+            </svg>
+        </a>
     </div>
-</div>
-<div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalToggleLabel3"style="color: #4E7779;">Create a New Trip</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label"style="color: #4E7779;">Trip Name:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                    </div>
-                </form>
-                <div class="d-grid gap-2 col-6 mx-auto">
-                    <button class="btn btn-primary" type="button" style="background-color: white; color: #4E7779;">Create</button>
+
+    <!-- 2 Modal -->
+    <div class="modal fade" id="addToTripModalToggle" aria-hidden="true" aria-labelledby="addToTripModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-end">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn btn-setting" data-bs-target="#existingTrips" data-bs-toggle="modal">Existing Trip</button>
+                    <hr />
+                    <button type="button" class="btn btn-setting" data-bs-target="#newTrip" data-bs-toggle="modal">Create a New Trip</button>
+                    <hr />
+                    <hr />
+                    <button type="button" class="btn btn-setting btn-cancel" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel4" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalToggleLabel4" style="color: #4E7779;">Error</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body" style="color: #4E7779;">
-                Event timing conflicts with current Trip Plan
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabe5" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalToggleLabel5" style="color: #4E7779;">Success!</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body" style="color: #4E7779;">
-                Event Successfully added to the Trip Plan
+    <div class="modal fade" id="existingTrips" aria-hidden="true" aria-labelledby="existingTripsLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-end">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn btn-setting" data-bs-target="#tripConflict" data-bs-toggle="modal">Canadian Rockies Trip</button>
+                    <hr />
+                    <button type="button" class="btn btn-setting" data-bs-target="#tripSuccess" data-bs-toggle="modal">Winter Shopping</button>
+                    <hr />
+                    <hr />
+                    <button type="button" class="btn btn-setting btn-cancel" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal fade" id="newTrip" aria-hidden="true" aria-labelledby="newTripLabel" tabindex="-1">
+        <div id="modal-center" class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-background">
+                <div class="modal-body">
+                    <form class="trip-form">
+                        <h5 class="create-option">Create a New Trip</h5>
+                        <div class="form-floating mt-3 mb-3">
+                            <input type="text" class="form-control" id="tripName" placeholder="unknown" required>
+                            <label for="tripName">Trip Name</label>
+                        </div>
+                        <div class="form-controls modal-footer">
+                            <button type="button" class="btn btn-close btn-outline-dark" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                            <button type="submit" class="btn btn-save" id="liveToastBtn">Create</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="tripConflict" aria-hidden="true" aria-labelledby="tripConflictLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content ">
+                <div class="modal-body modal-info" style="color: #C3BA9B;">
+                    <i class="bi bi-x-circle"></i>
+                    Event timing conflicts with current Trip Plan
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="tripSuccess" aria-hidden="true" aria-labelledby="tripSuccessLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-center">
+            <div class="modal-content">
+                <div class="modal-body modal-info">
+                    <i class="bi bi-check-circle"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h4 style="font-family: ;font-weight: 500; margin-bottom: 8px; "> Similar Events</h4>
+
+    <div id="popular">
+        <div class="card" style="width: 18rem;">
+            <a href="/EventPage">
+                <img class="card-img-top" src="https://secure-content.meetupstatic.com/images/classic-events/479928127/333x188.webp" alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Downtown Chess Meetup</h5>
+                <p class="card-text">Thu, Nov. 17, 2022</p>
+                <p class="card-text">12:30 PM - 8:00 PM MST</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <a href="/EventsSearch">
+                <img class="card-img-top" src="https://www.meetup.com/_next/image/?url=https%3A%2F%2Fsecure-content.meetupstatic.com%2Fimages%2Fclassic-events%2F507958160%2F676x380.webp&w=1920&q=75" alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Gaming Legion</h5>
+                <p class="card-text">Wed, Nov 16, 2022</p>
+                <p class="card-text">6:30 PM - 9:30 PM MST</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <a href="/EventPage">
+                <img class="card-img-top" src="https://www.meetup.com/_next/image/?url=https%3A%2F%2Fsecure-content.meetupstatic.com%2Fimages%2Fclassic-events%2F504231601%2F676x380.webp&w=1920&q=75" alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Fallcon: Board Games</h5>
+                <p class="card-text">Sat, Nov. 19, 2022</p>
+                <p class="card-text">12:00 PM - 8:00 PM MST</p>
+
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://www.meetup.com/_next/image/?url=https%3A%2F%2Fsecure-content.meetupstatic.com%2Fimages%2Fclassic-events%2F503270803%2F676x380.webp&w=1920&q=75" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Online Gaming: Dead by Daylight</h5>
+                <p class="card-text">Sat-Sun, Nov. 12-13, 2022</p>
+                <p class="card-text">8:00 PM - 1:00 AM MST</p>
+            </div>
+        </div>
+    </div>
 </div>
-
-
-<h4 style="font-family: ;font-weight: 500; margin-bottom: 8px; "> Similar Events</h4>
-
-<div id="popular">
-    <div class="card" style="width: 18rem;">
-        <a href="/EventPage">
-            <img class="card-img-top" src="https://secure-content.meetupstatic.com/images/classic-events/479928127/333x188.webp" alt="Card image cap">
-        </a>
-        <div class="card-body">
-            <h5 class="card-title">Downtown Chess Meetup</h5>
-            <p class="card-text">12:30PM - 8:00PM MST</p>
-            <p class="card-text">Thu, Nov. 17 2022</p>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <a href="/EventsSearch">
-            <img class="card-img-top" src="https://www.meetup.com/_next/image/?url=https%3A%2F%2Fsecure-content.meetupstatic.com%2Fimages%2Fclassic-events%2F507958160%2F676x380.webp&w=1920&q=75" alt="Card image cap">
-        </a>
-        <div class="card-body">
-            <h5 class="card-title">Gaming Legion</h5>
-            <p class="card-text">6:30PM - 9:30PM MST</p>
-            <p class="card-text">Wed, Nov 16 2022</p>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <a href="/EventPage">
-            <img class="card-img-top" src="https://www.meetup.com/_next/image/?url=https%3A%2F%2Fsecure-content.meetupstatic.com%2Fimages%2Fclassic-events%2F504231601%2F676x380.webp&w=1920&q=75" alt="Card image cap">
-        </a>
-        <div class="card-body">
-            <h5 class="card-title">Fallcon: Board Games</h5>
-            <p class="card-text">12:00PM - 8:00PM MST</p>
-            <p class="card-text">Sat, Nov. 19 2022</p>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="https://www.meetup.com/_next/image/?url=https%3A%2F%2Fsecure-content.meetupstatic.com%2Fimages%2Fclassic-events%2F503270803%2F676x380.webp&w=1920&q=75" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Online Gaming: Dead by Daylight</h5>
-            <p class="card-text">8:00PM - 1:00AM MST</p>
-            <p class="card-text">Sat-Sun, Nov. 12-13 2022</p>
-        </div>
-    </div>
-</div>
-
-
 
 @code {
 
