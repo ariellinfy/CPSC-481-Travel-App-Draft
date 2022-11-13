@@ -1,0 +1,53 @@
+﻿.page-container {
+    width: 100%;
+    padding: 1rem;
+}
+
+input[type=radio] {
+    display: inline;
+}
+
+.inp-submit {
+    background-color: white;
+    color: #4E7779;
+    box-shadow: 5px 5px 5px #ccc;
+    border-color: #4E7779;
+    border-radius: 10%;
+    width: 80px;
+    margin-top: 40px;
+}
+
+.form-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    padding: 0.75rem 0 0.25rem 0;
+    margin-top: 0.75rem;
+}
+
+.btn-cancel {
+    margin: 0.5rem 0 0 0;
+    color: #7E6D53;
+    font-weight: 700;
+    width: 100%;
+    border: 2px solid #7E6D53;
+    background: none;
+    padding: 0.3125rem 0.33rem;
+    height: auto;
+}
+
+.btn-apply {
+    background-color: #4E7779;
+    margin: 0.5rem 0 0 0;
+    color: white;
+    width: 100%;
+    border: 2px solid transparent;
+}
+
+datalist {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
