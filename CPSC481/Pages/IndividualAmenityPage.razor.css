@@ -1,5 +1,14 @@
-﻿body {
+﻿.page-container {
+    width: 100%;
+    padding: 1.5rem;
+}
+
+body {
     margin: 0;
+}
+
+#carouselExampleIndicators {
+    margin-bottom: 1rem;
 }
 
 .carousel-inner {
@@ -8,27 +17,52 @@
     border-radius: 3%;
 }
 
-.tags > span {
-    background-color: white;
-    border: solid 1px #4E7779;
-    color: #4E7779;
-    border-radius: 5%;
-    margin: 3px;
-    margin-top: 10px;
-    box-shadow: 5px 5px 5px #ccc;
-}
-
-.tags {
-    margin-bottom: 10px;
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-content:center;
 }
 
 .buttons {
     display: flex;
     justify-content: center;
-    font-size: x-small;
     text-align: center;
-    margin-left: 14rem;
-    margin-top: 0.3rem;
+}
+
+.ratings {
+    color: #4E7779;
+    font-size: larger;
+    display:flex;
+    align-items:center;
+    gap:0.35rem;
+}
+
+.tags > span {
+    background-color: white;
+    border: solid 1px #4E7779;
+    color: #4E7779;
+    border-radius: 0.75rem;
+    margin: 3px;
+    margin-top: 10px;
+    box-shadow: 2.5px 2.5px 2.5px #ccc;
+}
+
+.tag-container {
+    margin: 0.5rem 0;
+}
+
+.tag-btn {
+    background-color: white;
+    color: #625849;
+    border-color: #C3BA9B;
+    border-radius: 0.75rem;
+    margin: 3px;
+    box-shadow: 2.5px 2.5px 2.5px #ccc;
+}
+
+.tags {
+    margin-bottom: 10px;
 }
 
 #bookmark {
@@ -43,7 +77,7 @@
     display: flex;
     overflow: scroll;
     gap: 1rem;
-    margin-bottom: 50px;
+    margin-bottom: 1rem;
 }
 
 #similar-amenities::-webkit-scrollbar {
@@ -53,52 +87,89 @@
 a {
     text-decoration: none;
     color: black;
-    font-size: xx-small;
 }
 
-.title{
+.title {
+    width: 100%;
+    display: flex !important;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 0.5rem;
+}
+
+.event-title-head {
+    align-content: center;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+#btn-previous {
+    color: #000;
+    border: 0;
+    border-radius: 0.25rem;
+    opacity: .5;
+}
+
+.bi-x-lg {
+    font-size: 1.5rem;
+}
+
+.reviews {
     display: flex;
+    flex-direction: column;
+    gap: 0.275rem;
+    margin-bottom: 1rem;
+    outline: 0.15rem solid #C3BA9B;
+    border-radius: 0.5rem;
+    background-color: white;
 }
 
-h5 {
-    font-size: smaller;
+.review-header {
+    background-color: #C3BA9B;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    color: #7E6D53;
 }
 
-.top {
-    display: flex;
+.review-body {
+    padding: 0.5rem;
 }
 
 .card-img-top2 {
-    height: 2rem;
-    width: 4rem;
-    border-radius: 20%;
-    margin-top: 0.5rem;
+    height: 3rem;
+    width: 3rem;
 }
 
 .card-body2 {
     display: flex;
     flex-direction: row;
-    font-size: smaller;
-    border: 1px solid #4E7779;
     border-radius: 0.25rem;
     gap: 5%;
 }
 
+hr {
+    margin: 0.5rem 0;
+}
+
 .card-description2 {
-    width: 14rem;
+    width: 100%;
 }
 
 .card {
     border: none;
 }
 
-.reviews {
-    font-size: x-small;
-    margin-bottom: 1rem;
+.add-review {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    color: #F4F4E9;
+    background-color: #7E6D53;
 }
 
 h6 {
-    font-size: x-small;
     font-weight: bold;
     margin-top: 0.2rem;
     margin-bottom: 0.5rem;
@@ -109,7 +180,6 @@ h6 {
 }
 
 .description > p {
-    font-size: smaller;
     margin-bottom: 0.2rem;
 }
 
@@ -117,10 +187,13 @@ h6 {
     margin-bottom: 1rem;
 }
 
+.amenity-address{
+    margin:0;
+}
+
 .show-more {
     background-color: white;
     text-align: center;
-    font-size: x-small;
     justify-content: center;
     color: blue;
     width: fit-content;
@@ -129,6 +202,108 @@ h6 {
 
 .card-img-top {
     border-radius: 5%;
-    height: 6rem;
-    width: 8rem;
+    width: 218px;
+    height: 146px;
+    box-shadow: 2.5px 2.5px 2.5px #ccc;
+}
+
+.similar{
+    margin-top:1.5rem;
+}
+
+.card-body {
+    padding: 0.5rem 0.25rem;
+}
+
+.modal-start {
+    align-items: start !important;
+}
+
+.modal-center {
+    align-items: center !important;
+}
+
+.modal-end {
+    align-items: end !important;
+}
+
+.modal-background {
+    background-color: white !important;
+}
+
+.modal-info {
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+    color: #90C7CA;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bi-check-circle, .bi-x-circle {
+    font-size: 10rem;
+}
+
+.modal-content {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+}
+
+.btn-setting {
+    color: #4E7779;
+    padding: 0.25rem 0;
+    font-weight: 700;
+    background-color: #e9e9e9;
+    border-radius: 0.5rem;
+    font-size: large;
+}
+
+.btn-cancel {
+    color: #7E6D53;
+}
+
+.form-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    padding: 0.75rem 0 0.25rem 0;
+    margin-top: 0.75rem;
+}
+
+.btn-save {
+    background-color: #4E7779;
+    margin: 0.5rem 0 0 0;
+    color: white;
+    width: 100%;
+    border: 2px solid transparent;
+}
+
+.btn-close {
+    margin: 0.5rem 0 0 0;
+    color: #7E6D53;
+    font-weight: 700;
+    width: 100%;
+    border: 2px solid #C3BA9B;
+    background: none;
+    padding: 0.3125rem 0.33rem;
+    height: auto;
+    opacity: 50;
+}
+
+hr {
+    margin: 0.25rem 0;
+    background-color: transparent;
+}
+
+.btn-check:focus + .btn, .btn:focus {
+    box-shadow: none;
 }

@@ -1,180 +1,255 @@
 ﻿@page "/amenitypage"
 @using System.Threading;
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="@firstSlideCss"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="@secondSlideCss"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2" class="@thirdSlideCss"></li>
-    </ol>
+<div class="page-container">
     <div class="title">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
-            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
-        </svg>
-        <h4 style="font-weight: bold;">Calgary Tower</h4>
+        <h3 class="event-title-head">Calgary Tower</h3>
+        <button id="btn-previous" type="button" class="btn"><i class="bi bi-x-lg"></i></button>
     </div>
-    <div class="carousel-inner" style="box-shadow: 5px 5px 5px #ccc;">
-        <div class="carousel-item @firstSlideCss">
-            <img class="d-block w-100" src="https://images.squarespace-cdn.com/content/v1/5a87961cbe42d637c54cab93/1617699528333-HPU0CRYCD73ZZTF6LZTW/calgary-tower.jpg" alt="First slide">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="@firstSlideCss"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1" class="@secondSlideCss"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2" class="@thirdSlideCss"></li>
+        </ol>
+        <div class="carousel-inner" style="box-shadow: 5px 5px 5px #ccc;">
+            <div class="carousel-item @firstSlideCss">
+                <img class="d-block w-100" src="https://images.squarespace-cdn.com/content/v1/5a87961cbe42d637c54cab93/1617699528333-HPU0CRYCD73ZZTF6LZTW/calgary-tower.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item @secondSlideCss">
+                <img class="d-block w-100" src="https://static.wixstatic.com/media/29eefc_1a539e191dd64f568b7e38bfd6b9cdd3~mv2.jpg/v1/fill/w_560,h_332,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/CTowerWeb-ExperienceImage-Bottom.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item @thirdSlideCss">
+                <img class="d-block w-100" src="https://4.bp.blogspot.com/-rrMKB2IPZL4/VtiGuDVIM9I/AAAAAAABDMw/xfktkIx_-FY/s1600/sky%2B360%2Bcalgary%2Btower%2Balberta%2B%252812%2529.png" alt="Third slide">
+            </div>
         </div>
-        <div class="carousel-item @secondSlideCss">
-            <img class="d-block w-100" src="https://static.wixstatic.com/media/29eefc_1a539e191dd64f568b7e38bfd6b9cdd3~mv2.jpg/v1/fill/w_560,h_332,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/CTowerWeb-ExperienceImage-Bottom.jpg" alt="Second slide">
+    </div>
+
+    <div class="top">
+        <div class="ratings">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
         </div>
-        <div class="carousel-item @thirdSlideCss">
-            <img class="d-block w-100" src="https://4.bp.blogspot.com/-rrMKB2IPZL4/VtiGuDVIM9I/AAAAAAABDMw/xfktkIx_-FY/s1600/sky%2B360%2Bcalgary%2Btower%2Balberta%2B%252812%2529.png" alt="Third slide">
+
+        <div class="buttons">
+            <a class="btn btn-bookmark" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#7E6D53" class="bi bi-bookmark" viewBox="0 0 16 16">
+                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                </svg>
+            </a>
+            <a class="btn btn-add" type="button" data-bs-toggle="modal" href="#addToTripModalToggle" role="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#7E6D53" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- 2 Modal -->
+    <div class="modal fade" id="addToTripModalToggle" aria-hidden="true" aria-labelledby="addToTripModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-end">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn btn-setting" data-bs-target="#existingTrips" data-bs-toggle="modal">Existing Trip</button>
+                    <hr />
+                    <button type="button" class="btn btn-setting" data-bs-target="#newTrip" data-bs-toggle="modal">Create a New Trip</button>
+                    <hr />
+                    <hr />
+                    <button type="button" class="btn btn-setting btn-cancel" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="existingTrips" aria-hidden="true" aria-labelledby="existingTripsLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-end">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn btn-setting" data-bs-target="#tripConflict" data-bs-toggle="modal">Canadian Rockies Trip</button>
+                    <hr />
+                    <button type="button" class="btn btn-setting" data-bs-target="#tripSuccess" data-bs-toggle="modal">Winter Shopping</button>
+                    <hr />
+                    <hr />
+                    <button type="button" class="btn btn-setting btn-cancel" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="newTrip" aria-hidden="true" aria-labelledby="newTripLabel" tabindex="-1">
+        <div id="modal-center" class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-background">
+                <div class="modal-body">
+                    <form class="trip-form">
+                        <h5 class="create-option">Create a New Trip</h5>
+                        <div class="form-floating mt-3 mb-3">
+                            <input type="text" class="form-control" id="tripName" placeholder="unknown" required>
+                            <label for="tripName">Trip Name</label>
+                        </div>
+                        <div class="form-controls modal-footer">
+                            <button type="button" class="btn btn-close btn-outline-dark" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                            <button type="submit" class="btn btn-save" id="liveToastBtn">Create</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="tripConflict" aria-hidden="true" aria-labelledby="tripConflictLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content ">
+                <div class="modal-body modal-info" style="color: #C3BA9B;">
+                    <i class="bi bi-x-circle"></i>
+                    Event timing conflicts with current Trip Plan
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="tripSuccess" aria-hidden="true" aria-labelledby="tripSuccessLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-center">
+            <div class="modal-content">
+                <div class="modal-body modal-info">
+                    <i class="bi bi-check-circle"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="amenity-address fw-bold">101 9 Ave SW, Calgary, AB T2P 1J9</p>
+@*    <div class="tags">
+        <span class="badge badge-pill badge-success">Food&Beverage</span>
+        <span class="badge badge-pill badge-success">Nightlife</span>
+        <span class="badge badge-pill badge-success">Monument</span>
+    </div>*@
+
+    <div class="tag-container">
+        <button class="tag-btn">Food/Beverage</button>
+        <button class="tag-btn">Nightlife</button>
+        <button class="tag-btn">Monument</button>
+    </div>
+
+    <div class="description">
+        <p>Located 191 metres above the downtown core, the Calgary Tower offers the best view in the city and is a must-see on any visitor's itinerary. On the Observation Deck you'll experience a spectacular 360° view of the bustling city, the majestic Rocky Mountains, the foothills, and the prairies.</p>
+        <p class="show-more">Show More</p>
+    </div>
+
+    <div class="reviews">
+        <nav class="navbar navbar-expand-lg navbar-light review-header">
+            <h5 style="margin-bottom: 0; ">Reviews</h5>
+            <button class="btn add-review">
+                <i class="bi bi-pencil"></i>
+                Write a review
+            </button>
+        </nav>
+        <div class="review-body">
+            <div class="card-body2">
+                <img class="card-img-top2" src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg" />
+                <div class="card-description2">
+                    <p class="fw-bold">Mahmudul Hasan</p>
+                    <p>Very beautiful place, enjoyable & so lovely.</p>
+                </div>
+            </div>
+            <hr />
+            <div class="card-body2">
+                <img class="card-img-top2" src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg" />
+                <div class="card-description2">
+                    <p class="fw-bold">Tabish Ansari</p>
+                    <p>What an amazing view !!!</p>
+                </div>
+            </div>
+            <hr />
+            <div class="card-body2">
+                <img class="card-img-top2" src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg" />
+                <div class="card-description2">
+                    <p class="fw-bold">Carlos Uploads</p>
+                    <p>Really nice piece of history for the city of Calgary. No longer the tallest structure in the city. Although I can imagine in it’s day it felt really high up. I’d say it’s a must see attraction whilst in Calgary. The glass floor part was a fun extra.</p>
+                </div>
+            </div>
+            <hr />
+            <div class="card-body2">
+                <img class="card-img-top2" src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg" />
+                <div class="card-description2">
+                    <p class="fw-bold">Hannah Donaldson</p>
+                    <p>The tower is definitely a worth while experience. I have gone up three times and it was fun, though there is not a lot to it. If you don't mind heights, you can stand on the glass floor or walk around the building and enjoy the incredible 360° views.</p>
+                </div>
+            </div>
+            <hr />
+            <div class="card-body2">
+                <img class="card-img-top2" src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg" />
+                <div class="card-description2">
+                    <p class="fw-bold">Pitz</p>
+                    <p>Just went up the tower the views were incredible. Not to expensive but we'll worth a look. The see through floor is an eye opener too</p>
+                </div>
+            </div>
+            <p class="show-more">Show More</p>
+        </div>
+    </div>
+
+    <div class="similar">
+        <h4>Similar Places</h4>
+
+        <div id="similar-amenities">
+            <a href="/individualamenitypage">
+                <div class="card" style="width: 14rem;">
+                    <img class="card-img-top" src="https://az837918.vo.msecnd.net/publishedimages/Listings/2031/en-US/images/2/wilder-insitutecalgary-zoo-L-24.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Calgary Zoo</h5>
+                        <p class="card-text">210 St. George's Drive NE</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/individualamenitypage">
+                <div class="card" style="width: 14rem;">
+                    <img class="card-img-top" src="https://images.squarespace-cdn.com/content/v1/5a5590fc0abd0444cba48ff0/1574914985887-GXC9K581T7Q59V3XU9MN/Cabin+Brewing+Company+Taproom+1+.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cabin Brewing Company</h5>
+                        <p class="card-text">505 36 Ave SE</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/individualamenitypage">
+                <div class="card" style="width: 14rem;">
+                    <img class="card-img-top" src="https://www.heritagepark.ca//sites/default/files/styles/even_list_style/public/2018-08/botsfords-harness.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Heritage Park</h5>
+                        <p class="card-text">1900 Heritage Dr SW</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/individualamenitypage">
+                <div class="card" style="width: 14rem;">
+                    <img class="card-img-top" src="https://az837918.vo.msecnd.net/publishedimages/articles/789/en-CA/images/2/collecting-experiences-at-the-glenbow-museum-L-1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Glenbow Museum</h5>
+                        <p class="card-text">130 9 Ave SE</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/individualamenitypage">
+                <div class="card" style="width: 14rem;">
+                    <img class="card-img-top" src="https://www.avenuecalgary.com/wp-content/uploads/2018/12/Detours-VertigoTheatre.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Theatre Calgary</h5>
+                        <p class="card-text">220 9 Ave SE</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/individualamenitypage">
+                <div class="card" style="width: 14rem;">
+                    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Stephen_Avenue_Walk._Calgary._%2828278179767%29.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Stephen Avenue Walk</h5>
+                        <p class="card-text">340 8 Ave SW</p>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 </div>
 
-<div class="top">
-    <div class="ratings">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
-            <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z" />
-        </svg>
-    </div>
-    <div class="buttons">
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4E7779" class="bi bi-bookmark" viewBox="0 0 16 16">
-                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-            </svg>
-        </div>
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4E7779" class="bi bi-plus-circle" viewBox="0 0 16 16">
-                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg>
-        </div>
-    </div>
-</div>
-
-<div class="tags">
-    <span class="badge badge-pill badge-success">Food&Beverage</span>
-    <span class="badge badge-pill badge-success">Nightlife</span>
-    <span class="badge badge-pill badge-success">Monument</span>
-</div>
-
-<div class="description">
-    <p>Located 191 metres above the downtown core, the Calgary Tower offers the best view in the city and is a must-see on any visitor's itinerary. On the Observation Deck you'll experience a spectacular 360° view of the bustling city, the majestic Rocky Mountains, the foothills, and the prairies.</p>
-    <p>101 9 Ave SW, Calgary, AB T2P 1J9</p>
-    <p class="show-more">Show More</p>
-</div>
-
-<div class="reviews">
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #90C7CA; border-radius: 3%;">
-        <h5 style="margin-bottom: 0; margin-left: 1rem; font-size: small;">Reviews</h5>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4E7779" class="bi bi-pencil" viewBox="0 0 16 16" style="margin-right: 1rem;">
-            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
-        </svg>
-    </nav>
-    <div class="card-body2">
-        <img class="card-img-top2" src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg" />
-        <div class="card-description2">
-            <h6>Mahmudul Hasan</h6>
-            <p>Very beautiful place, enjoyable & so lovely.</p>
-        </div>
-    </div>
-    <div class="card-body2">
-        <img class="card-img-top2" src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg" />
-        <div class="card-description2">
-            <h6>Tabish Ansari</h6>
-            <p>What an amazing view !!!</p>
-        </div>
-    </div>
-    <div class="card-body2">
-        <img class="card-img-top2" src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg" />
-        <div class="card-description2">
-            <h6>Carlos Uploads</h6>
-            <p>Really nice piece of history for the city of Calgary. No longer the tallest structure in the city. Although I can imagine in it’s day it felt really high up. I’d say it’s a must see attraction whilst in Calgary. The glass floor part was a fun extra.</p>
-        </div>
-    </div>
-    <div class="card-body2">
-        <img class="card-img-top2" src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg" />
-        <div class="card-description2">
-            <h6>Hannah Donaldson</h6>
-            <p>The tower is definitely a worth while experience. I have gone up three times and it was fun, though there is not a lot to it. If you don't mind heights, you can stand on the glass floor or walk around the building and enjoy the incredible 360° views.</p>
-        </div>
-    </div>
-    <div class="card-body2">
-        <img class="card-img-top2" src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg" />
-        <div class="card-description2">
-            <h6>Pitz</h6>
-            <p>Just went up the tower the views were incredible. Not to expensive but we'll worth a look. The see through floor is an eye opener too</p>
-        </div>
-    </div>
-    <p class="show-more">Show More</p>
-</div>
-
-
-<h5>Similar Amenities</h5>
-
-<div id="similar-amenities">
-    <a href="/individualamenitypage">
-        <div class="card" style="width: 8rem;">
-            <img class="card-img-top" src="https://az837918.vo.msecnd.net/publishedimages/Listings/2031/en-US/images/2/wilder-insitutecalgary-zoo-L-24.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title" style="font-weight:bold;">Calgary Zoo</h5>
-                <p class="card-text">210 St. George's Drive NE</p>
-            </div>
-        </div>
-    </a>
-    <a href="/individualamenitypage">
-        <div class="card" style="width: 8rem;">
-            <img class="card-img-top" src="https://images.squarespace-cdn.com/content/v1/5a5590fc0abd0444cba48ff0/1574914985887-GXC9K581T7Q59V3XU9MN/Cabin+Brewing+Company+Taproom+1+.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title" style="font-weight:bold;">Cabin Brewing Company</h5>
-                <p class="card-text">505 36 Ave SE</p>
-            </div>
-        </div>
-    </a>
-    <a href="/individualamenitypage">
-        <div class="card" style="width: 8rem;">
-            <img class="card-img-top" src="https://www.heritagepark.ca//sites/default/files/styles/even_list_style/public/2018-08/botsfords-harness.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title" style="font-weight:bold;">Heritage Park</h5>
-                <p class="card-text">1900 Heritage Dr SW</p>
-            </div>
-        </div>
-    </a>
-    <a href="/individualamenitypage">
-        <div class="card" style="width: 8rem;">
-            <img class="card-img-top" src="https://az837918.vo.msecnd.net/publishedimages/articles/789/en-CA/images/2/collecting-experiences-at-the-glenbow-museum-L-1.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title"style="font-weight:bold;">Glenbow Museum</h5>
-                <p class="card-text">130 9 Ave SE</p>
-            </div>
-        </div>
-    </a>
-    <a href="/individualamenitypage">
-        <div class="card" style="width: 8rem;">
-            <img class="card-img-top" src="https://www.avenuecalgary.com/wp-content/uploads/2018/12/Detours-VertigoTheatre.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title" style="font-weight:bold;">Theatre Calgary</h5>
-                <p class="card-text">220 9 Ave SE</p>
-            </div>
-        </div>
-    </a>
-    <a href="/individualamenitypage">
-        <div class="card" style="width: 8rem;">
-            <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Stephen_Avenue_Walk._Calgary._%2828278179767%29.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title" style="font-weight:bold;">Stephen Avenue Walk</h5>
-                <p class="card-text">340 8 Ave SW</p>
-            </div>
-        </div>
-    </a>
-</div>
 
 @code {
     string firstSlideCss = "active";
