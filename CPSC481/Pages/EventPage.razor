@@ -4,16 +4,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="page-header">
-    <button type="button" class="btn btn-round">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+    <button type="button" class="btn btn-round" style="padding: 0;padding-right: 20px; font-weight:700;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
         </svg>
     </button>
-    <div class="" style=""><h3>3-round Settlers Tournament</h3></div>
+    <div class="event-title-head" style=""><h3 style="font-family:Georgia ;font-weight: 500;">3-Round Settlers Tournament</h3></div>
 </div>
 
 <img class="images-event" src="https://secure-content.meetupstatic.com/images/classic-events/449771821/333x188.webp" alt="DogShow" style="width:100%;">
-
 
 <div class="tag-container">
     <button class="tag-btn">games</button>
@@ -33,16 +32,30 @@
         <br />
         There will be 3 rounds. All players are guaranteed to play 2 games for a chance to play at a Round 3 Final Table.
     </h6>
-    <h6>1000 9 Avenue SW, CA, AB</h6>
-    <h6>12:45PM - 5:00PM MST, 13 Nov. 22</h6>
+    <h6><span style ="font-weight: 700;">Address: </span>1000 9 Avenue SW, CA, AB</h6>
+    <h6><span style="font-weight: 700;">Time: </span>12:45PM - 5:00PM MST</h6>
+    <h6><span style="font-weight: 700;">Date: </span>Sunday, November 13 2022</h6>
 </div>
 
 <div class="btn-container">
-    <button class="search-event-button" id="B1" style="border:none;" type="submit"><i class="fa fa-bookmark fa-2x"></i></button>
-    <button class="search-event-button" id="B2" style="border:none;" type="submit"><i class="fa fa-plus fa-2x"></i></button>
+    <a href="AddTrip" class="btn-fixed btn btn-round btn-add" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#4E7779" class="bi bi-bookmark" viewBox="0 0 16 16">
+            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+        </svg>
+    </a>
+    <a href="AddTrip" class="btn-fixed btn btn-round btn-add" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#4E7779" class="bi bi-plus-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+        </svg>
+    </a>
+
 </div>
 
-<h4>Similar Events</h4>
+
+
+
+<h4 style="font-family: ;font-weight: 500; margin-bottom: 8px; "> Similar Events</h4>
 
 <div id="popular">
     <div class="card" style="width: 18rem;">
@@ -51,8 +64,8 @@
         </a>
         <div class="card-body">
             <h5 class="card-title">Downtown Chess Meetup</h5>
-            <p class="card-text">341 10 Ave SW, CA, AB</p>
-            <p class="card-text">12:30PM - 8PM, 17 Nov. 22</p>
+            <p class="card-text">12:30PM - 8:00PM MST</p>
+            <p class="card-text">Thursday,Nov. 17 2022</p>
         </div>
     </div>
     <div class="card" style="width: 18rem;">
@@ -61,8 +74,8 @@
         </a>
         <div class="card-body">
             <h5 class="card-title">Gaming Legion</h5>
-            <p class="card-text">138 Bowness Center NW, CA, AB</p>
-            <p class="card-text">6:30PM - 9:30PM, 16 Nov. 22</p>
+            <p class="card-text">6:30PM - 9:30PM MST</p>
+            <p class="card-text">Wednesday,Nov 16 2022</p>
         </div>
     </div>
     <div class="card" style="width: 18rem;">
@@ -71,16 +84,16 @@
         </a>
         <div class="card-body">
             <h5 class="card-title">Fallcon: Board Games</h5>
-            <p class="card-text">4122 Brentwood Rd NW, CA, AB</p>
-            <p class="card-text">12PM - 8PM, 19 Nov. 22</p>
+            <p class="card-text">12:00PM - 8:00PM MST</p>
+            <p class="card-text">Saturday,Nov. 19 2022</p>
         </div>
     </div>
     <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="https://www.meetup.com/_next/image/?url=https%3A%2F%2Fsecure-content.meetupstatic.com%2Fimages%2Fclassic-events%2F503270803%2F676x380.webp&w=1920&q=75" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">Online Gaming: Dead by Daylight</h5>
-            <p class="card-text">Online</p>
-            <p class="card-text">8PM - 1AM, 12-13 Nov. 22</p>
+            <p class="card-text">8:00PM - 1:00AM MST</p>
+            <p class="card-text">Sat-Sun,Nov. 12-13 2022</p>
         </div>
     </div>
 </div>
