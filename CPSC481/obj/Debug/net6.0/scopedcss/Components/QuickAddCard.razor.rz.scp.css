@@ -1,0 +1,34 @@
+.card[b-39ls7r44ku] {
+    max-width: 11rem;
+}
+
+.btn-modal[b-39ls7r44ku] {
+    width: fit-content;
+    font-size: 1.5rem;
+    padding: 0.125rem 0.5rem;
+    position: absolute;
+    right: -0.5rem;
+    top: 5.5rem;
+    opacity: 0.9;
+    border-radius: 5rem;
+    background-color: #90C7CA;
+    color: white;
+}
+
+    .btn-modal:focus[b-39ls7r44ku] {
+        box-shadow: none;
+        background-color: #C3BA9B;
+    }
+
+.title-smaller[b-39ls7r44ku] {
+    font-size: 1rem;
+}
+
+.card-text[b-39ls7r44ku] {
+    margin: 0;
+}
+
+img[b-39ls7r44ku] {
+    width: auto;
+    height: 7rem;
+}

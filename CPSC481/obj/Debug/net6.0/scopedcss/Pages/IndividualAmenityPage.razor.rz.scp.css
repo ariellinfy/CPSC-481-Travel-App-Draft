@@ -1,0 +1,134 @@
+body[b-twwcbedlsd] {
+    margin: 0;
+}
+
+.carousel-inner[b-twwcbedlsd] {
+    width: 100%;
+    height: 10rem;
+    border-radius: 3%;
+}
+
+.tags > span[b-twwcbedlsd] {
+    background-color: white;
+    border: solid 1px #4E7779;
+    color: #4E7779;
+    border-radius: 5%;
+    margin: 3px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+.tags[b-twwcbedlsd] {
+    margin-bottom: 10px;
+}
+
+.buttons[b-twwcbedlsd] {
+    display: flex;
+    justify-content: center;
+    font-size: x-small;
+    text-align: center;
+    margin-left: 14rem;
+    margin-top: 0.3rem;
+}
+
+#bookmark[b-twwcbedlsd] {
+    width: 4rem;
+}
+
+#itinerary[b-twwcbedlsd] {
+    width: 4rem;
+}
+
+#similar-amenities[b-twwcbedlsd] {
+    display: flex;
+    overflow: scroll;
+    gap: 1rem;
+    margin-bottom: 50px;
+}
+
+#similar-amenities[b-twwcbedlsd]::-webkit-scrollbar {
+    display: none;
+}
+
+a[b-twwcbedlsd] {
+    text-decoration: none;
+    color: black;
+    font-size: xx-small;
+}
+
+.title[b-twwcbedlsd]{
+    display: flex;
+}
+
+h5[b-twwcbedlsd] {
+    font-size: smaller;
+}
+
+.top[b-twwcbedlsd] {
+    display: flex;
+}
+
+.card-img-top2[b-twwcbedlsd] {
+    height: 2rem;
+    width: 4rem;
+    border-radius: 20%;
+    margin-top: 0.5rem;
+}
+
+.card-body2[b-twwcbedlsd] {
+    display: flex;
+    flex-direction: row;
+    font-size: smaller;
+    border: 1px solid #4E7779;
+    border-radius: 0.25rem;
+    gap: 5%;
+}
+
+.card-description2[b-twwcbedlsd] {
+    width: 14rem;
+}
+
+.card[b-twwcbedlsd] {
+    border: none;
+}
+
+.reviews[b-twwcbedlsd] {
+    font-size: x-small;
+    margin-bottom: 1rem;
+}
+
+h6[b-twwcbedlsd] {
+    font-size: x-small;
+    font-weight: bold;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-description2 > p[b-twwcbedlsd] {
+    margin-bottom: 0.2rem;
+}
+
+.description > p[b-twwcbedlsd] {
+    font-size: smaller;
+    margin-bottom: 0.2rem;
+}
+
+.description[b-twwcbedlsd] {
+    margin-bottom: 1rem;
+}
+
+.show-more[b-twwcbedlsd] {
+    background-color: white;
+    text-align: center;
+    font-size: x-small;
+    justify-content: center;
+    color: blue;
+    width: fit-content;
+    margin: auto;
+}
+
+.card-img-top[b-twwcbedlsd] {
+    border-radius: 5%;
+    height: 6rem;
+    width: 8rem;
+}

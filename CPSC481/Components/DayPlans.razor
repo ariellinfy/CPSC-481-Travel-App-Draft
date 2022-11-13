@@ -1,8 +1,9 @@
 ﻿<div class="day-container">
-    <h4 class="fw-bold">@planDate</h4>
+    <h5 class="fw-bold">@planDate</h5>
 
-    <PlanCard planName="@plan1" planTime="@time1" planAddress="@address1" />
+    <PlanCard planName="@plan3" planTime="@time3" planAddress="@address3" />
     <PlanCard planName="@plan2" planTime="@time2" planAddress="@address2" />
+    <PlanCard planName="@plan1" planTime="@time1" planAddress="@address1" />
 </div>
 
 @code {
@@ -10,10 +11,14 @@
     public string planDate { get; set; } = "";
 
     private string plan1 = "Dog Show";
-    private string time1 = "5:00pm - 8:00pm";
-    private string address1 = "8th St SW, Calgary, AB";
+    private string time1 = "5:00 PM - 8:00 PM";
+    private string address1 = "1213 1 ST SW, Calgary, AB";
 
     private string plan2 = "Food Fair";
-    private string time2 = "2:30pm";
-    private string address2 = "26th Ave NW, Calgary, AB";
+    private string time2 = "2:30 PM - 4:00 PM";
+    private string address2 = "606 4ST SW 11th floor, Calgary, AB";
+
+    private string plan3 = "CORE Shopping Centre";
+    private string time3 = "10:00 AM - 1:00 PM";
+    private string address3 = "324 8 Ave SW, Calgary, AB";
 }

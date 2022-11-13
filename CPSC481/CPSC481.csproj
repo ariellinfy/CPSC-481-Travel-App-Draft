@@ -6,4 +6,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="Pages\AddPlan.razor" />
+    <Content Remove="Pages\AddTrip.razor" />
+    <Content Remove="Pages\QuickAdd.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Pages\AddPlan.razor.css" />
+    <None Remove="Pages\AddTrip.razor.css" />
+  </ItemGroup>
+
 </Project>

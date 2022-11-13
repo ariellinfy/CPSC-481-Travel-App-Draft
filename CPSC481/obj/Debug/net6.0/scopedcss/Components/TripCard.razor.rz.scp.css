@@ -1,6 +1,7 @@
 .trip-card[b-1w2br271js] {
     text-align: left;
     padding: 0;
+    border-radius: 1rem;
 }
 
 .trip-card:last-child[b-1w2br271js] {
