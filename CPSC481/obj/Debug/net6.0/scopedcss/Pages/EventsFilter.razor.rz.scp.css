@@ -2,5 +2,15 @@ input[type=radio][b-l2yi30aqmu] {
     display: inline;
 }
 
+.inp-submit[b-l2yi30aqmu] {
+    background-color: white;
+    color: #4E7779;
+    box-shadow: 5px 5px 5px #ccc;
+    border-color: #4E7779;
+    border-radius: 10%;
+    width: 80px;
+    margin-top: 40px;
+}
+
 body[b-l2yi30aqmu] {
 }
