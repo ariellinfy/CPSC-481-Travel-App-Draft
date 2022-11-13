@@ -19,13 +19,26 @@
 
 .search-event-button {
     background-color: white;
-    color: green;
-    padding: 3px;
+    color: #4E7779;
+    padding: 0px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 10px;
-    margin: 2px 2px;
+    font-size: 15px;
+    margin-left: 3px;
+    border-radius: 50%;
+    border: none;
+}
+
+.search-event-button1 {
+    margin-left: 14px;
+    background-color: white;
+    color: #4E7779;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
     border-radius: 50%;
     border: none;
 }
@@ -39,10 +52,11 @@
 
 .tag-btn {
     background-color: white;
-    color: green;
-    border-color: green;
+    color: #4E7779;
+    border-color: #4E7779;
     border-radius: 10%;
     margin: 3px;
+    box-shadow: 5px 5px 5px #ccc;
 }
 
 body {
@@ -106,6 +120,7 @@ img {
     object-fit: cover;
     border-radius: 5px;
     margin-right: 5px;
+    box-shadow: 5px 5px 5px #ccc;
 }
 
 .btn-container {
@@ -116,6 +131,7 @@ img {
 .dropdown {
     position: relative;
     display: inline-block;
+    
 }
 
 .dropdown-content {
@@ -124,6 +140,8 @@ img {
     background-color: #f1f1f1;
     min-width: 160px;
     z-index: 1;
+    left: unset;
+    right: 100%;
 }
 
     .dropdown-content a {
