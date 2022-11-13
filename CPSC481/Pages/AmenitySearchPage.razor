@@ -1,140 +1,257 @@
 ﻿@page "/amenitysearch"
-<div id="title">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
-        <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
-    </svg>
-    <h5 style="font-weight:bold;">Amenities Search</h5>
-</div>
 
-<nav class="navbar navbar-light">
-    <div class="input-group mb-3">
-        <input class="form-control mr-sm-2" type="search" placeholder="Outdoor" aria-label="Search">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<div class="page-container">
+    <nav class="navbar navbar-light">
+        <div class="input-group mb-3">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <a class="navbar-toggler" type="button" data-toggle="collapse" href="/EventsFilter" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle btn-sort" type="button" data-toggle="dropdown" style="background-color: white; color: #4E7779;"></button>
+                <div class="dropdown-content">
+                    <a href="#">Best Match</a>
+                    <a href="#">Most Popular</a>
+                    <a href="#">Newly Added</a>
+                </div>
+            </div>
+        </div>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        @*        <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+        </a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
-    </div>
-</nav>
+        </div>*@
+    </nav>
 
-<a href="/individualamenitypage">
-    <div class="card-body">
-        <img class="card-img-top" src="https://live.staticflickr.com/65535/50205958953_08b994dfb3_b.jpg" />
-        <div class="card-description">
-            <h6>Stephen Avenue Walk</h6>
-            <p>340 8 Ave SW</p>
+    <hr />
+
+    <div class="amenityList">
+        <a href="/amenitypage">
+            <div class="amenityListImg">
+                <img class="card-img-top" src="https://live.staticflickr.com/65535/50205958953_08b994dfb3_b.jpg" alt="Card image cap">
+            </div>
+        </a>
+        <a href="/amenitypage" style="width: 200px;">
+            <div class="description">
+                <h5>Stephen Avenue Walk</h5>
+                <h6>340 8 Ave SW</h6>
+                <div class="tag-container">
+                    <button class="tag-btn">games</button>
+                    <button class="tag-btn">indoor</button>
+                    <button class="tag-btn">group-games</button>
+                    <button class="tag-btn">prizes</button>
+                </div>
+            </div>
+        </a>
+        <div class="btn-container">
+            <button class="search-event-button1 btn-notify" id="B1" type="submit"><i class="bi bi-bell-fill"></i></button>
+            <button class="search-event-button btn-add" id="B2" type="submit"><i class="bi bi-plus-lg"></i></button>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-        </svg>
     </div>
-</a>
-<a href="/individualamenitypage">
-    <div class="card-body">
-        <img class="card-img-top" src="https://www.heritagepark.ca//sites/default/files/styles/even_list_style/public/2018-08/botsfords-harness.jpg" />
-        <div class="card-description">
-            <h6>Heritage Park</h6>
-            <p>1900 Heritage Dr SW</p>
+
+    <hr />
+
+    <div class="amenityList">
+        <a href="/amenitypage">
+            <div class="amenityListImg">
+                <img class="card-img-top" src="https://www.heritagepark.ca//sites/default/files/styles/even_list_style/public/2018-08/botsfords-harness.jpg" alt="Card image cap">
+            </div>
+        </a>
+        <a href="/amenitypage" style="width: 200px;">
+            <div class="description">
+                <h5>Heritage Park</h5>
+                <h6>1900 Heritage Dr SW</h6>
+                <div class="tag-container">
+                    <button class="tag-btn">games</button>
+                    <button class="tag-btn">chess</button>
+                    <button class="tag-btn">indoor</button>
+                    <button class="tag-btn">Downtown</button>
+                </div>
+            </div>
+        </a>
+        <div class="btn-container">
+            <button class="search-event-button1 btn-notify" id="B1" type="submit"><i class="bi bi-bell-fill"></i></button>
+            <button class="search-event-button btn-add" id="B2" type="submit"><i class="bi bi-plus-lg"></i></button>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-        </svg>
     </div>
-</a>
-<a href="/individualamenitypage">
-    <div class="card-body">
-        <img class="card-img-top" src="https://az837918.vo.msecnd.net/publishedimages/Listings/2031/en-US/images/2/wilder-insitutecalgary-zoo-L-24.jpg" />
-        <div class="card-description">
-            <h6>Calgary Zoo</h6>
-            <p>210 St. George's Drive NE</p>
+
+    <hr />
+
+    <div class="amenityList">
+        <a href="/amenitypage">
+            <div class="amenityListImg">
+                <img class="card-img-top" src="https://az837918.vo.msecnd.net/publishedimages/Listings/2031/en-US/images/2/wilder-insitutecalgary-zoo-L-24.jpg" alt="Card image cap">
+            </div>
+        </a>
+        <a href="/amenitypage" style="width: 200px;">
+            <div class="description">
+                <h5>Calgary Zoo</h5>
+                <h6>210 St. George's Drive NE</h6>
+                <div class="tag-container">
+                    <button class="tag-btn">games</button>
+                    <button class="tag-btn">convention</button>
+                    <button class="tag-btn">indoor</button>
+                    <button class="tag-btn">Free-food</button>
+                </div>
+            </div>
+        </a>
+        <div class="btn-container">
+            <button class="search-event-button1 btn-notify" id="B1" type="submit"><i class="bi bi-bell-fill"></i></button>
+            <button class="search-event-button btn-add" id="B2" type="submit"><i class="bi bi-plus-lg"></i></button>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-        </svg>
     </div>
-</a>
-<a href="/individualamenitypage">
-    <div class="card-body">
-        <img class="card-img-top" src="https://www.skibanff.com/application/files/9315/9423/9638/SSV21_Homepage2.jpg" />
-        <div class="card-description">
-            <h6>Sunshine Village</h6>
-            <p>1 Sunshine access Rd</p>
+
+    <hr />
+
+    <div class="amenityList">
+        <a href="/amenitypage">
+            <div class="amenityListImg">
+                <img class="card-img-top" src="https://www.skibanff.com/application/files/9315/9423/9638/SSV21_Homepage2.jpg" alt="Card image cap">
+            </div>
+        </a>
+        <a href="/amenitypage" style="width: 200px;">
+            <div class="description">
+                <h5>Sunshine Village</h5>
+                <h6>1 Sunshine access Rd</h6>
+                <div class="tag-container">
+                    <button class="tag-btn">games</button>
+                    <button class="tag-btn">indoor</button>
+                    <button class="tag-btn">Kid-friendly</button>
+                    <button class="tag-btn">Free-food</button>
+                </div>
+            </div>
+        </a>
+        <div class="btn-container">
+            <button class="search-event-button1 btn-notify" id="B1" type="submit"><i class="bi bi-bell-fill"></i></button>
+            <button class="search-event-button btn-add" id="B2" type="submit"><i class="bi bi-plus-lg"></i></button>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-        </svg>
     </div>
-</a>
-<a href="/individualamenitypage">
-    <div class="card-body">
-        <img class="card-img-top" src="https://douglasfir.com/wp-content/uploads/johnsons-canyon.jpg" />
-        <div class="card-description">
-            <h6>Johnston Canyon</h6>
-            <p>Bow Valley Pkwy, Improvement District No. 9</p>
+
+    <hr />
+
+    <div class="amenityList">
+        <a href="/amenitypage">
+            <div class="amenityListImg">
+                <img class="card-img-top" src="https://douglasfir.com/wp-content/uploads/johnsons-canyon.jpg" alt="Card image cap">
+            </div>
+        </a>
+        <a href="/amenitypage" style="width: 200px;">
+            <div class="description">
+                <h5>Johnston Canyon</h5>
+                <h6>Bow Valley Pkwy, Improvement District No. 9</h6>
+                <div class="tag-container">
+                    <button class="tag-btn">games</button>
+                    <button class="tag-btn">online</button>
+                    <button class="tag-btn">teams</button>
+                    <button class="tag-btn">tags</button>
+                </div>
+            </div>
+        </a>
+        <div class="btn-container">
+            <button class="search-event-button1 btn-notify" id="B1" type="submit"><i class="bi bi-bell-fill"></i></button>
+            <button class="search-event-button btn-add" id="B2" type="submit"><i class="bi bi-plus-lg"></i></button>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-        </svg>
     </div>
-</a>
-<a href="/individualamenitypage">
-    <div class="card-body">
-        <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/5/50/Nose_Hill_Park_YYC_01.jpg" />
-        <div class="card-description">
-            <h6>Nose Hill Park</h6>
-            <p>6465 14 St NW</p>
+
+    <hr />
+
+    <div class="amenityList" style="margin-bottom: 20px;">
+        <a href="/amenitypage">
+            <div class="amenityListImg">
+                <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/5/50/Nose_Hill_Park_YYC_01.jpg" alt="Card image cap">
+            </div>
+        </a>
+        <a href="/amenitypage" style="width: 200px;">
+            <div class="description">
+                <h5>Nose Hill Park</h5>
+                <h6>6465 14 St NW</h6>
+                <div class="tag-container">
+                    <button class="tag-btn">games</button>
+                    <button class="tag-btn">Downtown</button>
+                    <button class="tag-btn">icebreaker</button>
+                    <button class="tag-btn">chit-chat</button>
+                </div>
+            </div>
+        </a>
+        <div class="btn-container">
+            <button class="search-event-button1 btn-notify" id="B1" type="submit"><i class="bi bi-bell-fill"></i></button>
+            <button class="search-event-button btn-add" id="B2" type="submit"><i class="bi bi-plus-lg"></i></button>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-        </svg>
     </div>
-</a>
-<a href="/individualamenitypage">
-    <div class="card-body">
-        <img class="card-img-top" src="https://www.banfflakelouise.com/sites/default/files/lead/collection/shannonmartin-2021-custom_3.jpg" />
-        <div class="card-description">
-            <h6>Vermilion Lakes </h6>
-            <p>Improvement District No. 9</p>
+
+    <hr />
+
+    <div class="amenityList" style="margin-bottom: 20px;">
+        <a href="/amenitypage">
+            <div class="amenityListImg">
+                <img class="card-img-top" src="https://www.banfflakelouise.com/sites/default/files/lead/collection/shannonmartin-2021-custom_3.jpg" alt="Card image cap">
+            </div>
+        </a>
+        <a href="/amenitypage" style="width: 200px;">
+            <div class="description">
+                <h5>Vermilion Lakes</h5>
+                <h6>Improvement District No. 9</h6>
+                <div class="tag-container">
+                    <button class="tag-btn">games</button>
+                    <button class="tag-btn">Downtown</button>
+                    <button class="tag-btn">icebreaker</button>
+                    <button class="tag-btn">chit-chat</button>
+                </div>
+            </div>
+        </a>
+        <div class="btn-container">
+            <button class="search-event-button1 btn-notify" id="B1" type="submit"><i class="bi bi-bell-fill"></i></button>
+            <button class="search-event-button btn-add" id="B2" type="submit"><i class="bi bi-plus-lg"></i></button>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-        </svg>
     </div>
-</a>
-<a href="/individualamenitypage">
-    <div class="card-body">
-        <img class="card-img-top" src="https://www.banfflakelouise.com/sites/default/files/lead/collection/bllt-custom_21.jpg" />
-        <div class="card-description">
-            <h6>Lake Louise</h6>
-            <p>Lake Louise, AB</p>
+
+    <hr />
+
+    <div class="amenityList" style="margin-bottom: 20px;">
+        <a href="/amenitypage">
+            <div class="amenityListImg">
+                <img class="card-img-top" src="https://www.banfflakelouise.com/sites/default/files/lead/collection/bllt-custom_21.jpg" alt="Card image cap">
+            </div>
+        </a>
+        <a href="/amenitypage" style="width: 200px;">
+            <div class="description">
+                <h5>Lake Louise</h5>
+                <h6>Lake Louise, AB</h6>
+                <div class="tag-container">
+                    <button class="tag-btn">games</button>
+                    <button class="tag-btn">Downtown</button>
+                    <button class="tag-btn">icebreaker</button>
+                    <button class="tag-btn">chit-chat</button>
+                </div>
+            </div>
+        </a>
+        <div class="btn-container">
+            <button class="search-event-button1 btn-notify" id="B1" type="submit"><i class="bi bi-bell-fill"></i></button>
+            <button class="search-event-button btn-add" id="B2" type="submit"><i class="bi bi-plus-lg"></i></button>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
-        </svg>
     </div>
-</a>
+</div>
 
 @code {
 
