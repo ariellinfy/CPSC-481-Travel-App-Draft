@@ -1,4 +1,6 @@
-body[b-qpqwqbbvb1] {
+.page-container[b-qpqwqbbvb1] {
+    width: 100%;
+    padding: 1.5rem;
 }
 
 #searchButton[b-qpqwqbbvb1] {
@@ -9,7 +11,7 @@ body[b-qpqwqbbvb1] {
     display: flex;
     overflow: scroll;
     gap: 1rem;
-    margin-bottom: 50px;
+    margin-bottom: 1rem;
 }
 
 .card[b-qpqwqbbvb1] {
@@ -49,16 +51,12 @@ body[b-qpqwqbbvb1] {
     display: flex;
     overflow: scroll;
     gap: 1rem;
-    margin-bottom: 50px;
+    margin-bottom: 1rem;
 }
 
     #categories[b-qpqwqbbvb1]::-webkit-scrollbar {
         display: none;
     }
-
-h4[b-qpqwqbbvb1] {
-    margin-top: 50px;
-}
 
 p[b-qpqwqbbvb1] {
     margin-bottom: 0rem;
@@ -66,4 +64,12 @@ p[b-qpqwqbbvb1] {
 
 #categories > .card > img[b-qpqwqbbvb1] {
     border-radius: 30%;
+}
+
+.card-body[b-qpqwqbbvb1]{
+    padding: 0.75rem 0.25rem;
+}
+
+h4[b-qpqwqbbvb1] {
+    margin-bottom: 0.75rem;
 }
