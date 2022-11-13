@@ -8,119 +8,132 @@
     <title> Settings </title>
     <link rel="stylesheet" href="../bootstrap-5.2.0-dist/css/bootstrap.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/all.css%22%3E">
+    
 </head>
 <body>
 <div class="container">
     <div class="row">
-        <div class="col">
+        <div class="col-2 col-sm-2">
             <NavLink class="nav-link text-light" href="profilepage">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-arrow-left" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
                 </svg>
             </NavLink>
         </div>
-        <div class="col" style="border:1px solid #FFFFFF; display:flex; justify-content:center">
-            <h1><b><i><u> Reviews </u></i></b></h1>
-        </div>
-        <div class="col">
-        </div>
+        <div class="col-10 col-sm-10" style="display:flex; justify-content:left">
+            <h1> Reviews </h1>
+        </div>  
+        <hr>
     </div>
-    <br>
-    <hr>
-    @* <div class="row mt-3">
-        <div class="col-sm-4">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div> *@
-    <div class="row mt-3">
-        <div class="col-sm-4">
-            <img src="Unknown.jpg" class="img-fluid" alt="Picture 1">
-        </div>
-        <div class="col-sm-8">
-            <table class="table table-borderless">
+
+    <div class="row mb-2">
+        <div class="card" style="width:100%">
+            
+            <div class="card-body">
+                <h5 class="card-title">Calgary Towers</h5>
+                <p class="card-text">Calgary, AB</p>
+                <p class="card-text">01 Nov. 22</p>
+            </div>
+            <table class="table">
                 <thead>
                     <tr>
-                        <th> Name </th>
-                        <th> Ratings </th>
+                    <th scope="col">
+                        Ratings
+                    </th>
+                    <th scope="col"> 
+                        Review 
+                    </th>
                     </tr>
+                    
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Wyndhyam Gardens</td>
-                        <td> 4.8 stars </td>
+                    <td>
+                        4.8
+                        <b-form-ratings></b-form-ratings>
+                    </td>
+                    
+                    <td> 
+                    If you are looking for the perfect view of the Calgary Skyline then this is the building you need to visit. The views of the Downtown Calgary and all the buildings is awesome.                       
+                    </td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <hr>
-    <div class="row mt-3">
-        <div class="col-sm-4">
-            <img src="Unknown.jpg" class="img-fluid" alt="Picture 2">
-        </div>
-        <div class="col-sm-8">
-            <table class="table table-borderless">
-                <thead>
-                    <tr>
-                        <th> Name </th>
-                        <th> Ratings </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Wyndhyam Gardens</td>
-                        <td> 4.8 stars </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <hr>
-    <div class="row mt-6">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="mt-12 col-sm-2 offset-10">
-            <a href="addreview" class="btn-fixed btn btn-round btn-add" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
-            </svg>
-        </a>    
+
+    <div class="row mb-2">
+        <div class="card" style="width:100%">
+            <div class="card-body">
+                <h5 class="card-title">Wyndhyam Gardens</h5>
+                <p class="card-text">Calgary, AB</p>
+                <p class="card-text">26 Oct. 22</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                        <th scope="col">
+                            Ratings
+                        </th>
+                        <th scope="col"> 
+                            Review 
+                        </th>
+                        </tr>
+                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>
+                            4.4
+                            <b-form-ratings></b-form-ratings>
+                        </td>
+                        
+                        <td> 
+                            Staff was nice. Room was great. Very clean. Food service in lounge was slow although food was good. Shuttle staff was great. Very prompt. Overall, I would recommend this location for staying near the airport
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
+
+    <div class="row mb-2">
+        <div class="card" style="width:100%">
+            <div class="card-body">
+                <h5 class="card-title">Peace Bridge</h5>
+                <p class="card-text">Calgary, AB</p>
+                <p class="card-text">10 Nov. 22</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                        <th scope="col">
+                            Ratings
+                        </th>
+                        <th scope="col"> 
+                            Review 
+                        </th>
+                        </tr>
+                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>
+                            3.9
+                        </td>
+                        
+                        <td> 
+                            Great landmark. Gives helpful views of the city and river parks. There is an app that one can use for info but not necessary                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    
 </div>
 </body>
 </html>
+@code{
+
+}
