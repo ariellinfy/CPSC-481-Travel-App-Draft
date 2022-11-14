@@ -34,7 +34,7 @@
 
 .card-text[b-ozac5kjzqk] {
     margin: 0;
-    color: #C3BA9B;
+    color: black;
 }
 
 .btn-notify[b-ozac5kjzqk] {
@@ -1722,6 +1722,32 @@ h3[b-hp3prv8cmq] {
     background-color: #7E6D53;
     color: #F4F4E9;
     margin-top: 0.5rem;
+}
+/* _content/CPSC481/Pages/ProfileGuest.razor.rz.scp.css */
+.page-container[b-fa2yf03e9g]
+{
+    width:100%;
+    height:100%;
+    align-items:center;
+    justify-content:center;
+    padding:3rem;
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+}
+
+.btn-signup[b-fa2yf03e9g] {
+    width:100%;
+    background-color: #7E6D53;
+    color: #F4F4E9;
+    font-size:larger;
+}
+
+.btn-login[b-fa2yf03e9g] {
+    width: 100%;
+    background-color: #4E7779;
+    color: #F4F4E9;
+    font-size: larger;
 }
 /* _content/CPSC481/Pages/Reviews.razor.rz.scp.css */
 .page-container[b-doa07bcavk] {
