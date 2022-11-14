@@ -1,0 +1,67 @@
+.page-container[b-hp3prv8cmq] {
+    width: 100%;
+    padding: 1.75rem;
+}
+
+.page-header[b-hp3prv8cmq]{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+}
+
+h3[b-hp3prv8cmq] {
+    margin:0;
+}
+
+.btn-edit[b-hp3prv8cmq] {
+    color: #4E7779;
+}
+
+.bi-pencil-square[b-hp3prv8cmq] {
+    font-size: 1.5rem;
+}
+
+.bi-person-fill[b-hp3prv8cmq] {
+    font-size: 10rem;
+    width:fit-content;
+    height:200px;
+    margin-top: -1.5rem;
+}
+
+.user-info[b-hp3prv8cmq] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.user-choices[b-hp3prv8cmq] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:1rem;
+    margin: 1.5rem 0;
+}
+
+    .user-choices > a[b-hp3prv8cmq] {
+        text-decoration: none;
+        color: #F4F4E9;
+        font-size: large;
+    }
+
+.btn-choice[b-hp3prv8cmq] {
+    width: 100%;
+    background-color: #4E7779;
+    color: #F4F4E9;
+}
+
+.btn-logout[b-hp3prv8cmq] {
+    width: 100%;
+    background-color: #7E6D53;
+    color: #F4F4E9;
+    margin-top: 0.5rem;
+}

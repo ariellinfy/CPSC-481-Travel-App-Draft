@@ -1,0 +1,40 @@
+.page-container[b-hpympjh06k] {
+    width: 100%;
+    padding: 1.75rem;
+}
+
+.page-header[b-hpympjh06k] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h3[b-hpympjh06k], h6[b-hpympjh06k] {
+    margin: 0;
+}
+
+p[b-hpympjh06k] {
+    color: grey;
+}
+
+.offline[b-hpympjh06k] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.offline > h6[b-hpympjh06k]{
+    font-weight: 700;
+}
+
+.bi-toggle-on[b-hpympjh06k] {
+    font-size: 2rem;
+    color: #4E7779;
+}
+
+.btn-delete[b-hpympjh06k] {
+    background-color: #7E6D53;
+    color: #F4F4E9;
+}

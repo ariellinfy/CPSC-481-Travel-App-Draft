@@ -1,0 +1,45 @@
+﻿.page-container {
+    width: 100%;
+    padding: 1.75rem;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h3 {
+    margin: 0;
+}
+
+.review-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.card-body > p {
+    margin-bottom: 0;
+}
+
+.page-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.review-card {
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+.rating {
+    color: #C3BA9B;
+}
+
+.card-text {
+    color: #4E7779
+}

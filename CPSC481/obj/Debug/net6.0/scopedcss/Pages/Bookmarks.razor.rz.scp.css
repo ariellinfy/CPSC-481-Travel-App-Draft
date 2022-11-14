@@ -1,0 +1,41 @@
+.page-container[b-qj1d0e8lxi] {
+    width: 100%;
+    padding: 1.75rem;
+}
+
+.page-header[b-qj1d0e8lxi] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h3[b-qj1d0e8lxi] {
+    margin: 0;
+}
+
+.bookmark-card[b-qj1d0e8lxi] {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+.card-img-top[b-qj1d0e8lxi]{
+    width: 7rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+.rating[b-qj1d0e8lxi] {
+    color: #C3BA9B;
+}
+
+.page-body[b-qj1d0e8lxi]{
+    display:flex;
+    flex-direction:column;
+    gap: 0.5rem;
+}
+
+.card-body[b-qj1d0e8lxi] {
+    padding: 1rem 1rem 1rem 0.5rem;
+}

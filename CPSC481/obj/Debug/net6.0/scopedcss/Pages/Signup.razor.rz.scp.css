@@ -1,0 +1,22 @@
+.page-container[b-5zgfmlhjf0] {
+    width: 100%;
+    padding: 1.75rem;
+}
+
+.page-header[b-5zgfmlhjf0] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h3[b-5zgfmlhjf0] {
+    margin: 0;
+}
+
+.btn-signup[b-5zgfmlhjf0] {
+    width: 100%;
+    background-color: #4E7779;
+    color: #F4F4E9;
+    margin-top: 1rem;
+}

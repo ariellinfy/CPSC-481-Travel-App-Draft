@@ -1,0 +1,40 @@
+﻿.page-container {
+    width: 100%;
+    padding: 1.75rem;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h3, h6 {
+    margin: 0;
+}
+
+p {
+    color: grey;
+}
+
+.offline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.offline > h6{
+    font-weight: 700;
+}
+
+.bi-toggle-on {
+    font-size: 2rem;
+    color: #4E7779;
+}
+
+.btn-delete {
+    background-color: #7E6D53;
+    color: #F4F4E9;
+}

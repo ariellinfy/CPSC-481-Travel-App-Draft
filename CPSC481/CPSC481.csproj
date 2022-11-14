@@ -9,7 +9,11 @@
   <ItemGroup>
     <Content Remove="Pages\AddPlan.razor" />
     <Content Remove="Pages\AddTrip.razor" />
+    <Content Remove="Pages\Notifications.razor" />
     <Content Remove="Pages\QuickAdd.razor" />
+    <Content Remove="Pages\Reviews.razor.razor" />
+    <Content Remove="Pages\Settings.razor.razor" />
+    <Content Remove="Pages\Signup.razor.razor" />
   </ItemGroup>
 
   <ItemGroup>

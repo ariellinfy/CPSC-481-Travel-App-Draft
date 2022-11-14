@@ -1,33 +1,24 @@
 @page "/forget"
-<div class="container">
-    <div class="row">
-        <div class="col-2 col-sm-2">
-            
-            <NavLink class="nav-link text-light" href="loginpage">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-                </svg>    
-            </NavLink>
-            
-            
-        </div>
-        <div class="col-10 col-sm-10" style="border: 0px solid #000000; flex:display; justify-content:left">
-            <h1>Forgot Password?</h1>
-        </div>
-        <hr>
+
+<div class="page-container">
+    <div class="page-header">
+        <h3>Forgot Password?</h3>
+        <button class="btn btn-close"></button>
     </div>
-    <div class="col-sm mt-5">
+    <hr>
+
+    <div class="page-body">
         <p> Don't Worry! We got you covered.</p>
-        <p> Just type in your registered email and press submit. Next, we will send you the reset password link to your registered email and by clicking that link, you can reset your password..</p>
-    </div>
-    <div class="col-sm mt-4">
-        <form>
-            <div class="form-floating mb-3">
-                <input type="email" name="email" id="email" class="form-control">
-                <label for="email"> Enter Email </label>
+        <p> Just type in your registered email and press submit. Next, we will send you the reset password link to your registered email and by clicking that link, you can reset your password.</p>
+
+        <form class="forget-form">
+            <div class="form-floating mt-3 mb-3">
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                <label for="email">Email</label>
             </div>
-            <div class="col-sm mt-2">
-                <button type="submit" class="btn btn-outline-success">Submit</button>
+
+            <div class="form-controls">
+                <button type="submit" class="btn btn-submit">Submit</button>
             </div>
         </form>
     </div>

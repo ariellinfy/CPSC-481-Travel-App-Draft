@@ -4,46 +4,38 @@
 <link rel="stylesheet" href="Fa_icons/css/all.css"/>
 <!-- <PageTitle> Profile Page </PageTitle> -->
 
-<div class="container">
-    <div class="row">
-        <div class="col-2 col-sm-2">
-            <div class="col" style="border: 0px solid #000000; flex:display; justify-content:left">
-            <NavLink class="nav-link text-light" href="loginpage">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-                </svg>
-            </NavLink>
-            </div>
-        </div>
-        <div class="col-8 col-sm-8">
-            <h1> Signup </h1>
-        </div>
-        <hr>
+<div class="page-container">
+    <div class="page-header">
+        <h3>Signup</h3>
+        <button class="btn btn-close"></button>
     </div>
-    <p style="text-align:center">~Fill your credentials to signup for our app~</p>
-    <form class="mt-3">
-        <div class="row">
-            <div class="form-floating mb-3">
-            <input type="text" name="name1" id="name1" class="form-control">
-            <label for="name1"> Enter Name </label>
-            </div>
-            <div class="form-floating mb-3">
-            <input type="email" name="email" id="email" class="form-control">
-            <label for="email"> Enter Email </label>
-            </div>
-            <div class="form-floating mb-3">
-            <input type="password" name="password" id="password" class="form-control">
-            <label for="password"> Enter Password </label>
-            </div>
-            <div class="form-floating mb-3">
-            <input type="password" name="password" id="password" class="form-control">
-            <label for="password"> Confirm Password </label>
-            </div>
-            <div class="col-sm mb-3" style="border:1px solid #FFFFFF; display:flex; justify-content:center">
-                <button class="btn btn-outline-success" @onclick="signup_success">
-                    Create Account
-                </button>
-            </div>
+    <hr>
+
+    <p style="text-align:center; color: grey;">Fill your credentials to signup for our app</p>
+
+    <form class="login-form">
+        <div class="form-floating mt-3 mb-3">
+            <input type="text" class="form-control" id="name" placeholder="Adam Smith" required>
+            <label for="name">Name</label>
+        </div>
+
+        <div class="form-floating mt-3 mb-3">
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+            <label for="email">Email</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="password" placeholder="Password" required>
+            <label for="password">Password</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="confirm-password" placeholder="Password" required>
+            <label for="confirm-password">Confirm Password</label>
+        </div>
+
+        <div class="form-controls">
+            <button type="submit" class="btn btn-signup">Create Account</button>
         </div>
     </form>
 </div>

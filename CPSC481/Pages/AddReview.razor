@@ -1,80 +1,33 @@
 @page "/addreview"
-<div class="container">
-    <div class="row">
-        <div class="col-2">
-            <NavLink class="nav-link text-light" href="reviewspage">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-                </svg>
-            </NavLink>
-        </div>
-        <div class="col-8" style="text-align:right">
-            <h1><b><i><u> Add Reviews and Ratings </u></i></b></h1>
-        </div>
-        <div class="col-2">
 
-        </div>
+<div class="page-container">
+    <div class="page-header">
+        <h3>Rate <b>Wyndham Garden Calgary Airport</b></h3>
+        <button class="btn btn-close"></button>
     </div>
     <hr>
-    <div class="row">
-        <div class="col-sm-12">
-            <h3><b> Wyndhyam Gardens</b> </h3>
-            <h5> YYC Airport, Calgary</h5>
-        </div>
-        <div class="col-sm-12">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">
-                            Ratings
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        
-                        <td>
-                            <select>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
 
-        <div class="col-sm-12">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">
-                            Reviews
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <form> 
-                                <input type="textbox" class="form-control">
-                            </form>
-                        </td>
-                        
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-4 offset-4" style="border: 0px solid #000000; flex:display; justify-content:center">
-            <submit type="submit" class="btn btn-outline-success">Submit</submit>
-        </div>
-        @* <div class="col-sm" style="border: 0px solid #000000; flex:display; justify-content:center">
-            <button type="reset" class="btn btn-outline-success">Cancel</button> 
-        </div>*@
+    <div class="page-body">
+        <form class="forget-form">
+            <div class="rating">
+                <p for="floatingTextarea">Your Rating</p>
+                <div class="rate">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+            </div>
+            
+            <div class="review">
+                <p for="floatingTextarea">Your Review</p>
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+            </div>
+
+            <div class="form-controls">
+                <button type="submit" class="btn btn-submit">Submit</button>
+            </div>
+        </form>
     </div>
 </div>

@@ -1,0 +1,44 @@
+.page-container[b-28y4easfh1] {
+    width: 100%;
+    padding: 1.75rem;
+}
+
+.page-header[b-28y4easfh1] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h3[b-28y4easfh1], p[b-28y4easfh1] {
+    margin: 0;
+}
+
+.form-controls[b-28y4easfh1] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.btn-login[b-28y4easfh1] {
+    background-color: #4E7779;
+    color: #F4F4E9;
+    width: 100%;
+}
+
+.alterns[b-28y4easfh1] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn-signup[b-28y4easfh1] {
+    color: #7E6D53;
+    outline: solid;
+    width: 100%;
+}

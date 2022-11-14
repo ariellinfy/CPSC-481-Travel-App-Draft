@@ -1,0 +1,45 @@
+.page-container[b-doa07bcavk] {
+    width: 100%;
+    padding: 1.75rem;
+}
+
+.page-header[b-doa07bcavk] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h3[b-doa07bcavk] {
+    margin: 0;
+}
+
+.review-header[b-doa07bcavk] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.card-body > p[b-doa07bcavk] {
+    margin-bottom: 0;
+}
+
+.page-body[b-doa07bcavk] {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.review-card[b-doa07bcavk] {
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+.rating[b-doa07bcavk] {
+    color: #C3BA9B;
+}
+
+.card-text[b-doa07bcavk] {
+    color: #4E7779
+}

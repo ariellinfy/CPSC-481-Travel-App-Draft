@@ -1,0 +1,92 @@
+﻿.page-container {
+    width: 100%;
+    padding: 1.75rem;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h3 {
+    margin:0;
+}
+
+.bi-arrow-left {
+    font-size: 1.5rem;
+}
+
+.btn-save {
+    color: white;
+    background-color: #7E6D53;
+}
+
+.user-avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    opacity:0.75;
+}
+
+.bi-person-circle {
+    font-size: 10rem;
+    width: fit-content;
+    height: 200px;
+    margin-top: -1.5rem;
+}
+
+.btn-edit {
+    outline: solid;
+    border-radius: 5rem;
+    color: #F4F4E9;
+    position: absolute;
+    right: 8rem;
+    top: 16rem;
+    background-color: #4E7779;
+}
+
+.bi-pencil-fill{
+    font-size: large;
+}
+
+.btn-check:focus + .btn, .btn:focus {
+    box-shadow:none;
+}
+
+.modal-dialog-centered {
+    align-items: end;
+}
+
+.modal-content {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#plan-setting {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+}
+
+.btn-setting {
+    color: #4E7779;
+    padding: 0.25rem 0;
+    font-weight: 700;
+    background-color: #e9e9e9;
+    border-radius: 0.5rem;
+    font-size: large;
+}
+
+.btn-cancel {
+    color: #7E6D53;
+}
+
+hr {
+    margin: 0.25rem 0;
+    background-color: transparent;
+}

@@ -1,13 +1,13 @@
-﻿.page-container {
+.page-container[b-wrcy64rnuf] {
     width: 100%;
     padding: 1.5rem;
 }
 
-input[type=radio] {
+input[type=radio][b-wrcy64rnuf] {
     display: inline;
 }
 
-.inp-submit {
+.inp-submit[b-wrcy64rnuf] {
     background-color: white;
     color: #4E7779;
     box-shadow: 5px 5px 5px #ccc;
@@ -17,7 +17,7 @@ input[type=radio] {
     margin-top: 40px;
 }
 
-.form-controls {
+.form-controls[b-wrcy64rnuf] {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,7 +27,7 @@ input[type=radio] {
     margin-top: 0.75rem;
 }
 
-.btn-cancel {
+.btn-cancel[b-wrcy64rnuf] {
     margin: 0.5rem 0 0 0;
     color: #7E6D53;
     font-weight: 700;
@@ -38,7 +38,7 @@ input[type=radio] {
     height: auto;
 }
 
-.btn-apply {
+.btn-apply[b-wrcy64rnuf] {
     background-color: #4E7779;
     margin: 0.5rem 0 0 0;
     color: white;
@@ -46,7 +46,7 @@ input[type=radio] {
     border: 2px solid transparent;
 }
 
-datalist {
+datalist[b-wrcy64rnuf] {
     display: flex;
     justify-content: space-between;
     color: black;

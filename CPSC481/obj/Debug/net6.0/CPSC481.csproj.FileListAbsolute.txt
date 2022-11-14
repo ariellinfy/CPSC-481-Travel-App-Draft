@@ -95,3 +95,14 @@ C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\EventsFi
 C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\EventsSearch.razor.rz.scp.css
 C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Components\QuickAddCard.razor.rz.scp.css
 C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\IndividualAmenityPage.razor.rz.scp.css
+C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\AddReview.razor.rz.scp.css
+C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\Bookmarks.razor.rz.scp.css
+C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\Edit.razor.rz.scp.css
+C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\ForgetPass.razor.rz.scp.css
+C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\Login.razor.rz.scp.css
+C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\Profile.razor.rz.scp.css
+C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\Reviews.razor.rz.scp.css
+C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\Settings.razor.rz.scp.css
+C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\ExplorePageFilter.razor.rz.scp.css
+C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\Signup.razor.rz.scp.css
+C:\Users\Ariel Lin\Desktop\481\CPSC481\obj\Debug\net6.0\scopedcss\Pages\Login_for_new_user.razor.rz.scp.css

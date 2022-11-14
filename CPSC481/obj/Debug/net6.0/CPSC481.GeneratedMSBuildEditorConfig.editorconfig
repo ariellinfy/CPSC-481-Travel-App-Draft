@@ -19,46 +19,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/AddReview.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkUmV2aWV3LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/Bookmarks.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va21hcmtzLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/Edit.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/ForgetPass.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZ2V0UGFzcy5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/Login.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/Notifications.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90aWZpY2F0aW9ucy5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/Profile.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/Reviews.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmV2aWV3cy5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/Settings.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2V0dGluZ3MucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/Signup.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnbnVwLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Ariel Lin/Desktop/481/CPSC481/Resources/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UmVzb3VyY2VzXENvdW50ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -91,9 +51,21 @@ build_metadata.AdditionalFiles.CssScope = b-39ls7r44ku
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUcmlwQ2FyZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-1w2br271js
 
+[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/AddReview.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkUmV2aWV3LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-u756gmnvgp
+
 [C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/AmenitySearchPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW1lbml0eVNlYXJjaFBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-wsutnc8puh
+
+[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/Bookmarks.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va21hcmtzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-qj1d0e8lxi
+
+[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/Edit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-hs1pddvul6
 
 [C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/EventPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXZlbnRQYWdlLnJhem9y
@@ -115,9 +87,41 @@ build_metadata.AdditionalFiles.CssScope = b-eulzkcmefz
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhwbG9yZVBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-dgd59kxs8t
 
+[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/ExplorePageFilter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhwbG9yZVBhZ2VGaWx0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-wrcy64rnuf
+
+[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/ForgetPass.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZ2V0UGFzcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-rmawxqrphl
+
 [C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/IndividualAmenityPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kaXZpZHVhbEFtZW5pdHlQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-twwcbedlsd
+
+[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-jy2k4ww65p
+
+[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/Login_for_new_user.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5fZm9yX25ld191c2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-28y4easfh1
+
+[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/Profile.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-hp3prv8cmq
+
+[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/Reviews.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmV2aWV3cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-doa07bcavk
+
+[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/Settings.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2V0dGluZ3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-hpympjh06k
+
+[C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/Signup.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnbnVwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-5zgfmlhjf0
 
 [C:/Users/Ariel Lin/Desktop/481/CPSC481/Pages/TripMainPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJpcE1haW5QYWdlLnJhem9y
