@@ -1,46 +1,98 @@
-﻿@page "/"
+@inject HttpClient Http
+
+@page "/"
 @page "/explore"
 
+
 <PageTitle>Explore</PageTitle>
+
+
+
+
+
+@*@if (amenity == null)
+    {
+        <p>Loading...</p>
+    }
+    else
+    {
+        @foreach (var amenity in amenities)
+        {
+            <p>amenity tag: @amenities.tags</p>
+        }
+    }*@
+
+
+@*@code {
+        private Amenity[] amenity;
+
+        protected override async Task OnInitializedAsync()
+        {
+            amenity = await Http.GetFromJsonAsync<Amenity[]>("amenities.json");
+        }
+
+        public class Amenity
+        {
+            public string tags { get; set; }
+        }
+    }*@
+
+
 
 <div class="page-container">
     <h3>Hello Adam, Where Would You Like To Go?</h3>
 
     <nav class="navbar navbar-light">
         <div class="input-group mb-3">
+
+
+
+            @*<p style="margin:8px 0">
+                    <C1TextBox Class="filled-text-box" @bind-Text="filterText" Placeholder="Search Text" />
+                </p>
+
+                <FlexGrid ColumnHeaderStyle="@("background-color:#1565C0;color:#fff;font-size: 16px;")" ItemsSource="DataSource" AutoGenerateColumns="true">
+                    <FlexGridBehaviors>
+                        <FullTextFilterBehavior FilterString="@filterText" MatchNumbers="true" />
+                    </FlexGridBehaviors>
+                </FlexGrid>*@
+
+
+
+
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <a class="navbar-toggler" href="/explorepagefilter" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </a>
 
-@*            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>*@
+            @*            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>*@
         </div>
     </nav>
 
@@ -183,3 +235,39 @@
         </a>
     </div>
 </div>
+
+
+
+
+
+
+
+@*@page "/"*@
+<!--
+
+@if (amenities == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    @foreach (var amenity in amenities)
+    {
+        <p>Employee ID: @employee.Id</p>
+    }
+}
+
+
+@code {
+    private Employee[] employees;
+
+    protected override async Task OnInitializedAsync()
+    {
+        employees = await Http.GetFromJsonAsync<Employee[]>("employee.json");
+    }
+
+    public class Employee
+    {
+        public string Id { get; set; }
+    }
+}-->
